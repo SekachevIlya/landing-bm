@@ -1,3 +1,29 @@
+/**
+ * Helpers
+ */
+/**
+ * Colors
+ */
+.container-fluid {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/**
+ * Vendor
+ */
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
@@ -199,7 +225,7 @@
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-  font-family: swiper-icons;
+  font-family: "swiper-icons";
   font-size: var(--swiper-navigation-size);
   text-transform: none !important;
   letter-spacing: 0;
@@ -673,6 +699,9 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+/**
+ * Partials
+ */
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
@@ -936,7 +965,7 @@ body {
   opacity: 1;
   color: #202020;
   line-height: 1.15;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0em;
@@ -996,6 +1025,93 @@ p {
   padding: 0;
   background: url(../img/header-bg.jpg) no-repeat center top/cover;
   padding-bottom: 60px;
+}
+
+.navbar {
+  padding: 21px 0;
+  background: #061728;
+}
+.navbar .logo {
+  line-height: 0;
+  margin-right: 60px;
+}
+.navbar .menu {
+  padding-top: 4px;
+  color: white;
+  text-transform: uppercase;
+}
+.navbar .menu .menu__item {
+  padding-top: 12px;
+  border-radius: 10px 10px 0 0;
+}
+
+.menu__item {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+.button-signin:hover,
+.button-join:hover {
+  color: #FF7300;
+}
+
+/**
+ * Dropdown
+ */
+.menu-dropdown-item {
+  position: relative;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  width: 135px;
+}
+.menu-dropdown-item::after {
+  content: "";
+  transition: all 0.15s ease-in-out;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 55%;
+  width: 10px;
+  height: 6px;
+  background: url(../img/icons/arrow-chevron.svg) center center no-repeat;
+  z-index: 2;
+}
+.menu-dropdown-item.active {
+  background-color: #000;
+}
+.menu-dropdown-item.active > .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
+.menu-dropdown-item.active::after {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  background-color: black;
+  width: 135px;
+  z-index: 1;
+  padding: 10px 10px 10px;
+  left: 0;
+  transition: all 0.15s ease-in-out;
+  border-radius: 0 0 10px 10px;
+}
+
+.dropdown-content a {
+  color: #c8c8c8;
+  padding: 8px 0px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-transform: initial;
+}
+
+.heading {
+  font-size: 72px;
 }
 
 /**

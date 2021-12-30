@@ -1,6 +1,21 @@
-@import 'vendor/swiper.scss';
+/**
+ * Helpers
+ */
 
-@import 'partials/base';
+@import "helpers/variables.scss";
+@import "helpers/utility.scss";
 
-@import 'partials/header';
-@import 'partials/footer';
+/**
+ * Vendor
+ */
+
+@import "vendor/swiper.scss";
+
+/**
+ * Partials
+ */
+
+@import "partials/base";
+@import "partials/header";
+@import "partials/content";
+@import "partials/footer";

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -14,7 +15,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.svg">
@@ -24,6 +25,9 @@
     <meta name="msapplication-navbutton-color" content="#1B1B1B">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#1B1B1B">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
@@ -31,25 +35,21 @@
     <?php wp_body_open(); ?>
     <header class="header">
         <div class="navbar">
-            <div class="container">
-                <a href="<?php echo home_url(); ?>" class="logo"></a>
-                <?php
-				    wp_nav_menu( array(
-				        'theme_location' => 'menu-header',
-				        'menu_class'    => 'menu'
-				    ) );
-			    ?>
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <nav class="d-flex align-items-center">
+                    <a href="<?php echo home_url(); ?>" class="logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.svg" alt="">
+                    </a>
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'menu-header',
+                        'menu_class'    => 'menu'
+                    ));
+                    ?>
+                </nav>
+
                 <div class="navbar__wrap">
-                    <?php if(get_field('first_btn_name_header', 'option') || get_field('link_first_btn_header', 'option')) { ?>
-                    <a href="<?php esc_url(the_field('link_first_btn_header', 'option')); ?>" class="button-signin"
-                        rel="nofollow noopener noreferrer"
-                        target="_blank"><?php esc_attr(the_field('first_btn_name_header', 'option')); ?></a>
-                    <?php } ?>
-                    <?php if(get_field('second_btn_name_header', 'option') || get_field('link_second_btn_header', 'option')) { ?>
-                    <a href="<?php esc_url(the_field('link_second_btn_header', 'option')); ?>"
-                        class="button button_join" rel="nofollow noopener noreferrer"
-                        target="_blank"><?php esc_attr(the_field('second_btn_name_header', 'option')); ?></a>
-                    <?php } ?>
+
                 </div>
                 <div class="burger" id="burger"></div>
             </div>
