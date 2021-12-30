@@ -8,6 +8,7 @@ function bitmelech_scripts() {
 
 	// Main Style
 	wp_enqueue_style( 'main-style', get_template_directory_uri().'/assets/css/main.css', array(), '1.0' );
+	wp_enqueue_style( 'style', get_template_directory_uri().'/assets/css/style.css', array('main-style'), '1.0' );
 
     // Swiper Slider
     wp_register_script('swiper-slider', get_template_directory_uri().'/assets/js/swiper.min.js', array(), '1.0', true);
