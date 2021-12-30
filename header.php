@@ -86,7 +86,6 @@
                 <div class="offer__wrap">
                     <?php if(get_field('first_btn_link_offer') || get_field('first_btn_name_offer')) { ?>
                     <!--noindex-->
-
                     <a href="<?php esc_url(the_field('first_btn_link_offer')); ?>" class="button offer__button"
                         rel="nofollow noopener noreferrer" target="_blank">
                         <?php esc_attr(the_field('first_btn_name_offer')); ?></a>
