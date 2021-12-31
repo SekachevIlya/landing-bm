@@ -265,8 +265,34 @@ get_header();
 
         <div class="row-4">
             <div class="col">
+
                 <div class="item bg-black">
-                    <img src="" alt="">
+                    <img src="../assets/img/icons/logo-partners.svg" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
                 </div>
             </div>
             <div class="col">

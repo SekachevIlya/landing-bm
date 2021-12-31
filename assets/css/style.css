@@ -1110,8 +1110,33 @@ p {
   text-transform: initial;
 }
 
+.partners {
+  background-color: #061728;
+}
+
+.row-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+.row-4 .col {
+  margin: 10px;
+  width: 280px;
+  height: 88px;
+  background: #000;
+  border-radius: 10px;
+}
+.row-4 .col .bg-black {
+  font-size: 32px;
+  line-height: 40px;
+  color: #747474;
+  text-align: center;
+  padding-top: 25px;
+}
 .heading {
+  height: 80px;
   font-size: 72px;
+  color: #fff;
 }
 
 /**
