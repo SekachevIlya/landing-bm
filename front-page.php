@@ -259,6 +259,55 @@ get_header();
     </div>
 </section>
 
+<section class="why-bitmelech">
+    <div class="container">
+        <h2 class="heading">Why BitMelech</h2>
+
+        <div class="row-4">
+            <div class="col">
+
+                <div class="item bg-black">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-partners.png" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+            <div class="col">
+                <div class="item bg-black">
+                    LOGO
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="partners">
     <div class="container">
         <h2 class="heading">Our Partners</h2>
@@ -267,7 +316,7 @@ get_header();
             <div class="col">
 
                 <div class="item bg-black">
-                    <img src="../assets/img/icons/logo-partners.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-partners.png" alt="">
                 </div>
             </div>
             <div class="col">

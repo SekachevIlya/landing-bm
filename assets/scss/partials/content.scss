@@ -2,6 +2,17 @@
     background-color: #061728;
 }
 
+.why-bitmelech {
+    background-color: white;
+    .heading {
+        color: #061728;
+    }
+    .col {
+        background-color: #376ae0 !important;
+        color: white;
+    }
+}
+
 .row-4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -19,7 +30,6 @@
             text-align: center;
             padding-top: 25px;
         }
-        .bg-black img {}
     }
 }
 

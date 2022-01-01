@@ -1114,6 +1114,17 @@ p {
   background-color: #061728;
 }
 
+.why-bitmelech {
+  background-color: white;
+}
+.why-bitmelech .heading {
+  color: #061728;
+}
+.why-bitmelech .col {
+  background-color: #376ae0 !important;
+  color: white;
+}
+
 .row-4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1133,6 +1144,7 @@ p {
   text-align: center;
   padding-top: 25px;
 }
+
 .heading {
   height: 80px;
   font-size: 72px;
