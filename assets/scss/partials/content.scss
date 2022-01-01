@@ -7,30 +7,31 @@
     .heading {
         color: #061728;
     }
-    .col {
-        background-color: #376ae0 !important;
-        color: white;
+    .partner-block {
+        justify-content: space-between;
     }
 }
 
 .row-4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.mt50 {
     margin-top: 50px;
-    .col {
-        margin: 10px;
-        width: 280px;
-        height: 88px;
-        background: #000;
-        border-radius: 10px;
-        .bg-black {
-            font-size: 32px;
-            line-height: 40px;
-            color: #747474;
-            text-align: center;
-            padding-top: 25px;
-        }
-    }
+}
+
+.partner-block {
+    height: 100%;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    padding: 20px 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .heading {
@@ -39,4 +40,12 @@
     color: #fff;
 }
 
-.bg-black {}
+.bg-black {
+    background: #000;
+    color: #747474;
+}
+
+.bg-blue {
+    background: #376ae0;
+    color: white;
+}

@@ -263,46 +263,51 @@ get_header();
     <div class="container">
         <h2 class="heading">Why BitMelech</h2>
 
-        <div class="row-4">
+        <div class="row-4 mt50">
             <div class="col">
+                <div class="partner-block bg-blue">
+                    <div>
+                        Fast 24/7 Support
+                    </div>
 
-                <div class="item bg-black">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-partners.png" alt="">
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-partners.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-blue">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-blue">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-blue">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-blue">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-blue">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-blue">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-blue">
+                    <span>LOGO</span>
                 </div>
             </div>
         </div>
@@ -312,46 +317,46 @@ get_header();
     <div class="container">
         <h2 class="heading">Our Partners</h2>
 
-        <div class="row-4">
+        <div class="row-4 mt50">
             <div class="col">
 
-                <div class="item bg-black">
+                <div class="partner-block bg-black">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-partners.png" alt="">
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-black">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-black">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-black">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-black">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-black">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-black">
+                    <span>LOGO</span>
                 </div>
             </div>
             <div class="col">
-                <div class="item bg-black">
-                    LOGO
+                <div class="partner-block bg-black">
+                    <span>LOGO</span>
                 </div>
             </div>
         </div>
