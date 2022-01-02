@@ -1143,6 +1143,8 @@ p {
 }
 .selectable.active::after {
   transform: rotate(180deg);
+}
+
 .partners {
   background-color: #061728;
 }
