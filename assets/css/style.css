@@ -1110,6 +1110,41 @@ p {
   text-transform: initial;
 }
 
+.userbar {
+  display: flex;
+  background: black;
+  padding: 12px 12px;
+  color: #FF7300;
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 14px;
+  align-items: center;
+  border-radius: 10px;
+}
+.userbar > div {
+  padding: 0 10px;
+}
+
+.selectable {
+  position: relative;
+  padding-right: 30px !important;
+  cursor: pointer;
+}
+.selectable::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/icons/arrow-filled.svg) center center no-repeat;
+  transition: all 0.15s ease-in-out;
+}
+.selectable.active::after {
+  transform: rotate(180deg);
+}
+
 .heading {
   font-size: 72px;
 }

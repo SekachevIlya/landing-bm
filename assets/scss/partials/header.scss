@@ -101,4 +101,40 @@
     text-transform: initial;
 }
 
-.navbar__wrap {}
+.userbar {
+    display: flex;
+    background: black;
+    padding: 12px 12px;
+    color: $orange-dark;
+    line-height: 1.4;
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+    border-radius: 10px;
+    > div {
+        padding: 0 10px;
+    }
+}
+
+.selectable {
+    position: relative;
+    padding-right: 30px !important;
+    cursor: pointer;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: 10px;
+        width: 16px;
+        height: 16px;
+        background: url(../img/icons/arrow-filled.svg) center center no-repeat;
+        transition: all .15s ease-in-out;
+    }
+
+    &.active {
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+}

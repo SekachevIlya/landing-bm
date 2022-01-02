@@ -349,7 +349,7 @@ function initApi() {
 }
 
 function initDropdown() {
-    const triggers = document.querySelectorAll(".menu-dropdown-item");
+    const triggers = document.querySelectorAll(".menu-dropdown-item, .js-toggle");
     triggers.forEach(function(trigger) {
         trigger.addEventListener("click", function(e) {
             // Не переходим по ссылке

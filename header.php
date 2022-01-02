@@ -20,14 +20,14 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.svg">
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#1B1B1B">
+    <meta name="theme-color" content="#061728">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#1B1B1B">
+    <meta name="msapplication-navbutton-color" content="#061728">
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#1B1B1B">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#061728">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
@@ -49,7 +49,20 @@
                 </nav>
 
                 <div class="navbar__wrap">
-
+                    <div class="userbar">
+                        <div class="selectable js-toggle">
+                            <span>EUR</span>
+                        </div>
+                        <div class="selectable js-toggle">
+                            <span>ENG</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/cog.svg" alt="Cog icon">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/user.svg" alt="User icon">
+                        </div>
+                    </div>
                 </div>
                 <div class="burger" id="burger"></div>
             </div>
