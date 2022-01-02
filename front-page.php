@@ -259,6 +259,45 @@ get_header();
     </div>
 </section>
 
+<section class="making-bitmelech">
+    <div class="container">
+        <h2 class="heading">Making your first steps with BitMelech</h2>
+
+        <div class="making-block mt50">
+            <div class="col">
+                <div class="making bg-brown">
+                    <div>
+                        <span>Getting signed in</span>
+                    </div>
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="making bg-dark__blue">
+                    <div>
+                        <span>KYC</span>
+                    </div>
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="making bg-dark__blue">
+                    <div>
+                        <span>Buy your first crypto</span>
+                    </div>
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="why-bitmelech">
     <div class="container">
         <h2 class="heading">Why BitMelech</h2>
@@ -267,51 +306,114 @@ get_header();
             <div class="col">
                 <div class="partner-block bg-blue">
                     <div>
-                        Fast 24/7 Support
+                        <span>Fast 24/7 Support</span>
                     </div>
 
                     <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-partners.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-1.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="partner-block bg-blue">
-                    <span>LOGO</span>
+                    <div>
+                        <span>Easily Buy Crypto with fiat</span>
+                    </div>
+
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-2.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="partner-block bg-blue">
-                    <span>LOGO</span>
+                    <div>
+                        <span>Visa Crypto Card</span>
+                    </div>
+
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-3.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="partner-block bg-blue">
-                    <span>LOGO</span>
+                    <div>
+                        <span>NFT Marketplace</span>
+                    </div>
+
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-4.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="partner-block bg-blue">
-                    <span>LOGO</span>
+                    <div>
+                        <span>Low fees</span>
+                    </div>
+
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-5.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="partner-block bg-blue">
-                    <span>LOGO</span>
+                    <div>
+                        <span>Advanced trading APIs</span>
+                    </div>
+
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-6.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="partner-block bg-blue">
-                    <span>LOGO</span>
+                    <div>
+                        <span>Security (2FA, biometrics)</span>
+                    </div>
+
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-7.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="partner-block bg-blue">
-                    <span>LOGO</span>
+                    <div>
+                        <span>Legal Compliance (Why KYC)</span>
+                    </div>
+
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-8.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="partner-block bg-blue">
+                    <div>
+                        <span>24h trading volumes</span>
+                    </div>
+
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-9.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="partner-block bg-blue">
+                    <div>
+                        <span>IEO</span>
+                    </div>
+
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-10.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 <section class="partners">
     <div class="container">

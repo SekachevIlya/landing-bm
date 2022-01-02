@@ -1118,10 +1118,60 @@ p {
   background-color: white;
 }
 .why-bitmelech .heading {
+  height: 80px;
+  font-size: 72px;
   color: #061728;
 }
 .why-bitmelech .partner-block {
   justify-content: space-between;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+}
+
+.making-bitmelech .heading {
+  width: 804px;
+  height: 160px;
+  font-size: 66px;
+  color: #000;
+}
+.making-bitmelech .making-block {
+  display: flex;
+}
+.making-bitmelech .making {
+  position: relative;
+  width: 380px;
+  height: 238px;
+  border-radius: 10px;
+  margin: 0 20px 0 0;
+}
+.making-bitmelech .making span {
+  position: absolute;
+  font-size: 30px;
+  line-height: 40px;
+  color: white;
+  width: 262px;
+  bottom: 32px;
+  left: 32px;
+  z-index: 2;
+}
+.making-bitmelech .bg-brown {
+  background: #151524;
+}
+.making-bitmelech .bg-brown img {
+  margin: 18px 5px 20px 56px;
+}
+.making-bitmelech .bg-dark__blue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #02101f;
+}
+.making-bitmelech .bg-dark__blue img {
+  position: absolute;
+  right: 8px;
+  bottom: 32px;
+  z-index: 1;
 }
 
 .row-4 {
