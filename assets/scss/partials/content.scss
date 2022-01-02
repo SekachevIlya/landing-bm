@@ -1,7 +1,103 @@
-.row {}
-
-.heading {
-    font-size: 72px;
+.partners {
+    background-color: #061728;
 }
 
-.partners {}
+.why-bitmelech {
+    background-color: white;
+    .heading {
+        height: 80px;
+        font-size: 72px;
+        color: #061728;
+    }
+    .partner-block {
+        justify-content: space-between;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: left;
+    }
+}
+
+.making-bitmelech {
+    .heading {
+        width: 804px;
+        height: 160px;
+        font-size: 66px;
+        color: #000;
+    }
+    .making-block {
+        display: flex;
+    }
+    .making {
+        position: relative;
+        width: 380px;
+        height: 238px;
+        border-radius: 10px;
+        margin: 0 20px 0 0;
+        span {
+            position: absolute;
+            font-size: 30px;
+            line-height: 40px;
+            color: white;
+            width: 262px;
+            bottom: 32px;
+            left: 32px;
+            z-index: 2;
+        }
+    }
+    .bg-brown {
+        background: #151524;
+        img {
+            margin: 18px 5px 20px 56px;
+        }
+    }
+    .bg-dark__blue {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #02101f;
+        img {
+            position: absolute;
+            right: 8px;
+            bottom: 32px;
+            z-index: 1;
+        }
+    }
+}
+
+.row-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.partner-block {
+    height: 100%;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    padding: 20px 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    height: 80px;
+    font-size: 72px;
+    color: #fff;
+}
+
+.bg-black {
+    background: #000;
+    color: #747474;
+}
+
+.bg-blue {
+    background: #376ae0;
+    color: white;
+}
