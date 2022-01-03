@@ -2,26 +2,63 @@
  * Header
  */
 
-.home--first-section {
-    padding: 0;
-    background: url(../img/header-bg.jpg) no-repeat center top/cover;
-    padding-bottom: 60px;
-}
-
 .navbar {
     padding: 21px 0;
     background: $dark;
-    .logo {
-        line-height: 0;
-        margin-right: 60px;
-    }
     .menu {
         padding-top: 4px;
         color: white;
         text-transform: uppercase;
         .menu__item {
-            padding-top: 12px;
             border-radius: 10px 10px 0 0;
+            padding-top: 14px;
+            @include bp-max(1400px) {
+                padding-top: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.navbar .menu,
+.navbar__wrap {
+    @include bp-max(1300px) {
+        display: none;
+    }
+}
+
+.burger {
+    background: url(../img/hamburger.svg) no-repeat center/contain;
+    width: 28px;
+    height: 24px;
+    z-index: 222;
+    margin-left: 19px;
+    position: relative;
+    @include bp(1300px) {
+        display: none;
+    }
+    @include bp-max(430px) {
+        width: 18px;
+        height: 18px;
+        margin-left: 12px;
+    }
+    &.active {
+        background: url(../img/close.svg) no-repeat center/contain;
+    }
+}
+
+.logo {
+    line-height: 0;
+    margin-right: 60px;
+    @include bp-max(1400px) {
+        margin-right: 20px;
+        >img {
+            width: 150px;
+        }
+    }
+    >img {
+        @include bp-max(430px) {
+            width: 100px;
         }
     }
 }
@@ -37,14 +74,6 @@
     color: $orange-dark;
 }
 
-// .logo {
-//     width: 138px;
-//     height: 39px;
-//     background: url(../img/logo_black.svg) no-repeat center/contain;
-//     width: 218px;
-//     height: 62px;
-//     display: block;
-// }
 
 /**
  * Dropdown
@@ -90,15 +119,14 @@
     left: 0;
     transition: all 0.15s ease-in-out;
     border-radius: 0 0 10px 10px;
-}
-
-.dropdown-content a {
-    color: #c8c8c8;
-    padding: 8px 0px;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    text-transform: initial;
+    a {
+        color: #c8c8c8;
+        padding: 8px 0px;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        text-transform: initial;
+    }
 }
 
 .userbar {
@@ -111,30 +139,7 @@
     font-size: 14px;
     align-items: center;
     border-radius: 10px;
-    > div {
+    >div {
         padding: 0 10px;
-    }
-}
-
-.selectable {
-    position: relative;
-    padding-right: 30px !important;
-    cursor: pointer;
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 10%;
-        right: 10px;
-        width: 16px;
-        height: 16px;
-        background: url(../img/icons/arrow-filled.svg) center center no-repeat;
-        transition: all .15s ease-in-out;
-    }
-
-    &.active {
-        &::after {
-            transform: rotate(180deg);
-        }
     }
 }

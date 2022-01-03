@@ -145,15 +145,27 @@ function initApi() {
                 ".coins-rate-table-mob"
             );
 
-        priceSlide[index].innerHTML = data.price;
-        rateSlide[index].innerHTML =
-            data.difference < 0 ? data.difference : `+${data.difference}`;
-        priceDesktopTable[index].innerHTML = data.price;
-        priceMobTable[index].innerHTML = data.price;
-        rateDesktopTable[index].innerHTML =
-            data.difference < 0 ? data.difference : `+${data.difference}`;
-        rateMobTable[index].innerHTML =
-            data.difference < 0 ? data.difference : `+${data.difference}`;
+        if (priceSlide[index]) {
+            priceSlide[index].innerHTML = data.price;
+        }
+        if (rateSlide[index]) {
+            rateSlide[index].innerHTML =
+                data.difference < 0 ? data.difference : `+${data.difference}`;
+        }
+        if (priceDesktopTable[index]) {
+            priceDesktopTable[index].innerHTML = data.price;
+        }
+        if (priceMobTable[index]) {
+            priceMobTable[index].innerHTML = data.price;
+        }
+        if (rateDesktopTable[index]) {
+            rateDesktopTable[index].innerHTML =
+                data.difference < 0 ? data.difference : `+${data.difference}`;
+        }
+        if (rateMobTable[index]) {
+            rateMobTable[index].innerHTML =
+                data.difference < 0 ? data.difference : `+${data.difference}`;
+        }
 
         if (data.difference < 0) {
             if (coinsRateSlide[index].classList.contains("coins-rate_plus")) {
@@ -161,22 +173,34 @@ function initApi() {
                 coinsRateDesktopTable[index].classList.remove(
                     "coins-rate_plus"
                 );
-                coinsRateMobTable[index].classList.remove("coins-rate_plus");
+                if (coinsRateMobTable[index]) {
+                    coinsRateMobTable[index].classList.remove(
+                        "coins-rate_plus"
+                    );
+                }
             }
             coinsRateSlide[index].classList.add("coins-rate_minus");
             coinsRateDesktopTable[index].classList.add("coins-rate_minus");
-            coinsRateMobTable[index].classList.add("coins-rate_minus");
+            if (coinsRateMobTable[index]) {
+                coinsRateMobTable[index].classList.add("coins-rate_minus");
+            }
         } else {
             if (coinsRateSlide[index].classList.contains("coins-rate_minus")) {
                 coinsRateSlide[index].classList.remove("coins-rate_minus");
                 coinsRateDesktopTable[index].classList.remove(
                     "coins-rate_minus"
                 );
-                coinsRateMobTable[index].classList.remove("coins-rate_minus");
+                if (coinsRateMobTable[index]) {
+                    coinsRateMobTable[index].classList.remove(
+                        "coins-rate_minus"
+                    );
+                }
             }
             coinsRateSlide[index].classList.add("coins-rate_plus");
             coinsRateDesktopTable[index].classList.add("coins-rate_plus");
-            coinsRateMobTable[index].classList.add("coins-rate_plus");
+            if (coinsRateMobTable[index]) {
+                coinsRateMobTable[index].classList.add("coins-rate_plus");
+            }
         }
     };
 
@@ -196,7 +220,7 @@ function initApi() {
         return ctx;
     };
 
-    const createChart = (ctx, id, data) => {
+    const createChart = (ctx, id, data, isGreen) => {
         const totalDuration = 1000;
         const delayBetweenPoints = totalDuration / data.length;
         const previousY = (ctx) =>
@@ -238,7 +262,7 @@ function initApi() {
             type: "line",
             data: {
                 datasets: [{
-                    borderColor: "#cccccc",
+                    borderColor: isGreen ? "#27ae60" : "#eb5757",
                     borderWidth: 1,
                     radius: 0,
                     data: data,
@@ -322,7 +346,15 @@ function initApi() {
                         }, []
                     );
 
-                    createChart(ctx, id, dataChart);
+                    var coinRates = document.querySelectorAll(
+                        `.coinschart .coins-rate-table-desktop-num`
+                    );
+                    // If first character is '+' the chart should be green. Example: '+1.34%'
+                    var isGreen =
+                        coinRates &&
+                        coinRates[id] &&
+                        coinRates[id].innerHTML[0] === "+";
+                    createChart(ctx, id, dataChart, isGreen);
                 });
             } else {
                 chartArr.forEach((chart, index) => {
@@ -349,7 +381,9 @@ function initApi() {
 }
 
 function initDropdown() {
-    const triggers = document.querySelectorAll(".menu-dropdown-item, .js-toggle");
+    const triggers = document.querySelectorAll(
+        ".menu-dropdown-item, .js-toggle"
+    );
     triggers.forEach(function(trigger) {
         trigger.addEventListener("click", function(e) {
             // Не переходим по ссылке

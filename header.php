@@ -56,9 +56,9 @@
                         <div class="selectable js-toggle">
                             <span>ENG</span>
                         </div>
-                        <div class="d-flex align-items-center">
+                        <!-- <div class="d-flex align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/cog.svg" alt="Cog icon">
-                        </div>
+                        </div> -->
                         <div class="d-flex align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/user.svg" alt="User icon">
                         </div>
@@ -66,5 +66,21 @@
                 </div>
                 <div class="burger" id="burger"></div>
             </div>
+        </div>
+
+
+        <div class="mobile-menu" id="mobile-menu">
+            <?php if (get_field('first_btn_name_header', 'option') || get_field('link_first_btn_header', 'option')) { ?>
+                <a href="<?php esc_url(the_field('link_first_btn_header', 'option')); ?>" class="button-signin" rel="nofollow noopener noreferrer" target="_blank"><?php esc_attr(the_field('first_btn_name_header', 'option')); ?></a>
+            <?php } ?>
+            <?php if (get_field('second_btn_name_header', 'option') || get_field('link_second_btn_header', 'option')) { ?>
+                <a href="<?php esc_url(the_field('link_second_btn_header', 'option')); ?>" class="button-join" rel="nofollow noopener noreferrer" target="_blank"><?php esc_attr(the_field('second_btn_name_header', 'option')); ?></a>
+            <?php } ?>
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'menu-header',
+                'menu_class'    => 'menu'
+            ));
+            ?>
         </div>
     </header>

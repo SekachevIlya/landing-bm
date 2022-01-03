@@ -1,0 +1,15 @@
+/**
+ * Responsive
+ */
+
+@mixin bp($val) {
+    @media screen and (min-width: $val) {
+        @content;
+    }
+}
+
+@mixin bp-max($val) {
+    @media screen and (max-width: $val) {
+        @content;
+    }
+}

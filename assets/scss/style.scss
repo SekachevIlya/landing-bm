@@ -3,6 +3,7 @@
  */
 
 @import "helpers/variables.scss";
+@import "helpers/mixins.scss";
 @import "helpers/utility.scss";
 
 /**
@@ -18,4 +19,5 @@
 @import "partials/base";
 @import "partials/header";
 @import "partials/content";
+@import "partials/coinschart";
 @import "partials/footer";
