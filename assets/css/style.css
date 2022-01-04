@@ -94,6 +94,31 @@
   background: #e26600;
 }
 
+.row-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.heading {
+  font-size: 72px;
+  color: #fff;
+}
+
+.bg-black {
+  background: #000;
+  color: #747474;
+}
+
+.bg-blue {
+  background: #376ae0;
+  color: white;
+}
+
 /**
  * Vendor
  */
@@ -1252,8 +1277,8 @@ p {
 }
 
 /**
- * Homepage's main section
- */
+   * Homepage's main section
+   */
 .home--first-section {
   padding: 0;
   padding-bottom: 60px;
@@ -1319,20 +1344,92 @@ p {
 }
 
 /**
- * Section "BTC, ETH and most value 24h or 7d"
- */
+   * Section "BTC, ETH and most value 24h or 7d"
+   */
 .start h2 {
   max-width: 800px;
   margin-bottom: 60px;
 }
 
 /**
- * Section "Partners"
- */
+   * Section "Trade with Comfort and Ease"
+   */
+.trade .heading {
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.trade .tabs {
+  color: #979797;
+  margin-bottom: 20px;
+}
+.trade .tabs > span {
+  display: inline-block;
+  margin-right: 40px;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 40px;
+}
+.trade .tabs .active {
+  color: white;
+}
+.trade .content {
+  display: flex;
+  width: 100%;
+}
+.trade .content .left {
+  flex-basis: 58.33%;
+  margin-right: 15px;
+}
+.trade .content .right {
+  margin-left: 15px;
+  flex-basis: 41.66%;
+}
+.trade .content .graphic-item {
+  position: relative;
+}
+.trade .content .graphic-item .graphic-item--bg-image {
+  position: absolute;
+  right: 0;
+  width: 809px;
+  max-width: none;
+  height: auto;
+  z-index: 1;
+}
+.trade .content .graphic-item .phone {
+  position: relative;
+  z-index: 2;
+  padding-top: 50px;
+  width: 326px;
+  height: 554px;
+  margin-left: 40px;
+}
+.trade .content ul li {
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+  margin-bottom: 16px;
+}
+.trade .content ul li::before {
+  content: "";
+  display: inline-block;
+  margin-right: 12px;
+  width: 10px;
+  height: 10px;
+  background-color: #fe8d30;
+  border-radius: 50%;
+  margin-bottom: 1px;
+}
+
+/**
+   * Section "Partners"
+   */
 .partners {
   background-color: #061728;
 }
 
+/**
+ * Section "Why BitMelech"
+ */
 .why-bitmelech {
   background-color: white;
 }
@@ -1348,6 +1445,9 @@ p {
   text-align: left;
 }
 
+/**
+ * Section "Making your first steps with BitMelech"
+ */
 .making-bitmelech .heading {
   width: 804px;
   height: 160px;
@@ -1393,16 +1493,6 @@ p {
   z-index: 1;
 }
 
-.row-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-}
-
-.mt50 {
-  margin-top: 50px;
-}
-
 .partner-block {
   height: 100%;
   font-size: 32px;
@@ -1413,21 +1503,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.heading {
-  font-size: 72px;
-  color: #fff;
-}
-
-.bg-black {
-  background: #000;
-  color: #747474;
-}
-
-.bg-blue {
-  background: #376ae0;
-  color: white;
 }
 
 .coinschart {

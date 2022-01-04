@@ -130,6 +130,7 @@
 
     </div>
 </section>
+
 <section class="making-bitmelech">
     <div class="container">
         <h2 class="heading">Making your first steps with BitMelech</h2>
@@ -167,6 +168,41 @@
             </div>
         </div>
     </div>
+</section>
+
+<section class="trade bg-dark">
+    <div class="container">
+        <h2 class="heading text-white">Trade with Comfort and Ease</h2>
+
+        <div class="tabs">
+            <span role="button" class="active" id="simple">Simple interface</span>
+            <span role="button" id="advanced">Advanced interface</span>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <div class="graphic-item">
+                    <img class="graphic-item--bg-image" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/waves.png" alt="Graphic's background">
+
+                    <div class="phone simple">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/phone.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Mobile</li>
+                    <li>Wallets</li>
+                    <li>Swap</li>
+                    <li>Spot Trading</li>
+                    <li>Favourites</li>
+                    <li>Web</li>
+                    <li>Flexible interface</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <section class="why-bitmelech">
@@ -286,6 +322,7 @@
             </div>
         </div>
 </section>
+
 <section class="partners">
     <div class="container">
         <h2 class="heading">Our Partners</h2>
@@ -336,5 +373,4 @@
     </div>
 </section>
 
-<?php
-get_footer();
+<?php get_footer();

@@ -3,197 +3,248 @@
  */
 
 .heading {
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 80px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
 }
 
-
 /**
- * Homepage's main section
- */
+   * Homepage's main section
+   */
 
 .home--first-section {
-    padding: 0;
-    padding-bottom: 60px;
-    background: $dark;
+  padding: 0;
+  padding-bottom: 60px;
+  background: $dark;
+  position: relative;
+  > * {
     position: relative;
-    >* {
-        position: relative;
-        z-index: 2;
+    z-index: 2;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/graphics/home-main.png) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+  }
+  .content {
+    padding: 100px 0;
+    .header {
+      max-width: 580px;
+      margin-bottom: 13px;
     }
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background: url(../img/graphics/home-main.png) no-repeat center center;
-        background-size: cover;
-        z-index: 1;
+    .description {
+      color: $white-500;
+      max-width: 670px;
+      font-weight: 500;
+      line-height: 40px;
+      font-size: 24px;
+      margin-bottom: 28px;
     }
-    .content {
-        padding: 100px 0;
-        .header {
-            max-width: 580px;
-            margin-bottom: 13px;
-        }
-        .description {
-            color: $white-500;
-            max-width: 670px;
-            font-weight: 500;
-            line-height: 40px;
-            font-size: 24px;
-            margin-bottom: 28px;
-        }
-    }
+  }
 }
 
 .offer__wrap {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .offer__button {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .offer__button:nth-of-type(2) {
-    margin-left: 20px;
-    color: #fff;
-    border-color: #fff;
-    background: transparent;
+  margin-left: 20px;
+  color: #fff;
+  border-color: #fff;
+  background: transparent;
 }
 
 .offer__desc {
-    font-size: 28px;
-    margin: 30px 0 60px;
+  font-size: 28px;
+  margin: 30px 0 60px;
 }
 
 .offer__title span {
-    color: #f18933;
+  color: #f18933;
 }
 
-
 /**
- * Section "BTC, ETH and most value 24h or 7d"
- */
+   * Section "BTC, ETH and most value 24h or 7d"
+   */
 
 .start {
-    h2 {
-        max-width: 800px;
-        margin-bottom: 60px;
-    }
+  h2 {
+    max-width: 800px;
+    margin-bottom: 60px;
+  }
 }
-
 
 /**
- * Section "Partners"
- */
+   * Section "Trade with Comfort and Ease"
+   */
+.trade {
+  .heading {
+    max-width: 800px;
+    margin-bottom: 30px;
+  }
+  .tabs {
+    color: #979797;
+    margin-bottom: 20px;
+    > span {
+      display: inline-block;
+      margin-right: 40px;
+      cursor: pointer;
+      font-size: 32px;
+      line-height: 40px;
+    }
+    .active {
+      color: white;
+    }
+  }
+  .content {
+    display: flex;
+    width: 100%;
+    .left {
+      flex-basis: 58.33%;
+      margin-right: 15px;
+    }
+    .right {
+      margin-left: 15px;
+      flex-basis: 41.66%;
+    }
+    .graphic-item {
+      position: relative;
+      .graphic-item--bg-image {
+        position: absolute;
+        right: 0;
+        width: 809px;
+        max-width: none;
+        height: auto;
+        z-index: 1;
+      }
+      .phone {
+        position: relative;
+        z-index: 2;
+        padding-top: 50px;
+        width: 326px;
+        height: 554px;
+        margin-left: 40px;
+      }
+    }
+
+    ul {
+      li {
+        font-size: 24px;
+        line-height: 32px;
+        color: white;
+        margin-bottom: 16px;
+        &::before {
+          content: "";
+          display: inline-block;
+          margin-right: 12px;
+          width: 10px;
+          height: 10px;
+          background-color: $orange-light;
+          border-radius: 50%;
+          margin-bottom: 1px;
+        }
+      }
+    }
+  }
+}
+
+/**
+   * Section "Partners"
+   */
 
 .partners {
-    background-color: #061728;
+  background-color: #061728;
 }
 
+/**
+ * Section "Why BitMelech"
+ */
 .why-bitmelech {
-    background-color: white;
-    .heading {
-        height: 80px;
-        font-size: 72px;
-        color: #061728;
-    }
-    .partner-block {
-        justify-content: space-between;
-        font-size: 20px;
-        line-height: 28px;
-        text-align: left;
-    }
+  background-color: white;
+  .heading {
+    height: 80px;
+    font-size: 72px;
+    color: #061728;
+  }
+  .partner-block {
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
 }
 
+/**
+ * Section "Making your first steps with BitMelech"
+ */
 .making-bitmelech {
-    .heading {
-        width: 804px;
-        height: 160px;
-        font-size: 66px;
-        color: #000;
+  .heading {
+    width: 804px;
+    height: 160px;
+    font-size: 66px;
+    color: #000;
+  }
+  .making-block {
+    display: flex;
+  }
+  .making {
+    position: relative;
+    width: 380px;
+    height: 238px;
+    border-radius: 10px;
+    margin: 0 20px 0 0;
+    span {
+      position: absolute;
+      font-size: 30px;
+      line-height: 40px;
+      color: white;
+      width: 262px;
+      bottom: 32px;
+      left: 32px;
+      z-index: 2;
     }
-    .making-block {
-        display: flex;
+  }
+  .bg-brown {
+    background: #151524;
+    img {
+      margin: 18px 5px 20px 56px;
     }
-    .making {
-        position: relative;
-        width: 380px;
-        height: 238px;
-        border-radius: 10px;
-        margin: 0 20px 0 0;
-        span {
-            position: absolute;
-            font-size: 30px;
-            line-height: 40px;
-            color: white;
-            width: 262px;
-            bottom: 32px;
-            left: 32px;
-            z-index: 2;
-        }
+  }
+  .bg-dark__blue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #02101f;
+    img {
+      position: absolute;
+      right: 8px;
+      bottom: 32px;
+      z-index: 1;
     }
-    .bg-brown {
-        background: #151524;
-        img {
-            margin: 18px 5px 20px 56px;
-        }
-    }
-    .bg-dark__blue {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #02101f;
-        img {
-            position: absolute;
-            right: 8px;
-            bottom: 32px;
-            z-index: 1;
-        }
-    }
-}
-
-.row-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-}
-
-.mt50 {
-    margin-top: 50px;
+  }
 }
 
 .partner-block {
-    height: 100%;
-    font-size: 32px;
-    line-height: 40px;
-    text-align: center;
-    padding: 20px 16px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.heading {
-    // height: 80px;
-    font-size: 72px;
-    color: #fff;
-}
-
-.bg-black {
-    background: #000;
-    color: #747474;
-}
-
-.bg-blue {
-    background: #376ae0;
-    color: white;
+  height: 100%;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  padding: 20px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
