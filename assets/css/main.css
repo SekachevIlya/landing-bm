@@ -157,80 +157,6 @@
     line-height: 38px;
 }
 
-.mobile-menu {
-    background: #fff;
-    position: absolute;
-    width: 100%;
-    z-index: 13;
-    top: 0;
-    right: 0;
-    width: 0;
-    visibility: hidden;
-    opacity: 0;
-    overflow-y: auto;
-    -webkit-transition: width 0.5s cubic-bezier(0.73, -0.44, 0.34, 1.43);
-    transition: width 0.5s cubic-bezier(0.73, -0.44, 0.34, 1.43);
-    -webkit-transition: opacity 0.5s cubic-bezier(0.73, -0.44, 0.16, 1.56);
-    transition: opacity 0.5s cubic-bezier(0.73, -0.44, 0.16, 1.56);
-    padding: 80px 20px 40px;
-}
-
-.mobile-menu.active {
-    width: 100%;
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: opacity 1s cubic-bezier(0.73, -0.44, 0.16, 1.56);
-    transition: opacity 1s cubic-bezier(0.73, -0.44, 0.16, 1.56);
-    -webkit-filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.16));
-    filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.16));
-}
-
-.mobile-menu__wrap {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-    margin-bottom: 15px;
-    border-top: 1px solid #e5e5e5;
-    padding-top: 20px;
-}
-
-.mobile-menu a {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-    color: #202020;
-    padding: 0;
-}
-
-.mobile-menu .menu {
-    display: block;
-    font-size: 20px;
-}
-
-.mobile-menu .dropdown-content {
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-    color: #202020;
-    box-shadow: none;
-    margin: 0;
-    padding: 0;
-}
-
-.mobile-menu .menu__item>ul {
-    font-size: 16px;
-}
-
 input:-webkit-autofill {
     background-color: transparent !important;
 }
@@ -509,42 +435,11 @@ input:-webkit-autofill {
     margin-left: auto;
 }
 
-.footer {
-    background: url(../img/footer-bg.jpg) no-repeat center top/cover;
-    color: #fff;
-}
-
-.footer-top {
-    background: rgba(25, 26, 28, 0.8);
-    padding: 60px 0;
-}
-
-.footer-bottom {
-    padding: 40px 0;
-    font-size: 14px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.footer-wrap {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
 
 .contacts__link {
     color: #f18933;
 }
 
-.footer-title {
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 35px;
-}
 
 .contacts__item span {
     min-width: 61px;
@@ -556,13 +451,6 @@ input:-webkit-autofill {
     margin-bottom: 27px;
 }
 
-.footer-item {
-    margin-bottom: 20px;
-}
-
-.footer-item:hover a {
-    color: #f18933;
-}
 
 .contacts__link {
     border-bottom: 1px solid transparent;
@@ -858,10 +746,6 @@ input:-webkit-autofill {
     .security-pic {
         top: 20px;
     }
-    .footer-bottom {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
     .adress,
     .copyright {
         margin: 10px 0;
@@ -932,17 +816,6 @@ input:-webkit-autofill {
         height: 160px;
         margin-top: -187px;
         margin-left: -80px;
-    }
-    .footer-top {
-        padding: 40px 0;
-    }
-    .footer-wrap {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-    .footer-block:first-of-type {
-        width: 100%;
-        margin-bottom: 30px;
     }
     .section-heading_tools {
         margin-bottom: 40px;
@@ -1114,23 +987,8 @@ input:-webkit-autofill {
     .coinschart .coins-name {
         padding-left: 45px;
     }
-    .footer-bottom {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
     .copyright {
         margin-left: 0;
-    }
-    .footer-bottom {
-        padding: 20px 0px;
-    }
-    .footer-block {
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-    .footer-top {
-        padding: 40px 0 20px;
     }
     .contacts__item span {
         margin-right: 20px;

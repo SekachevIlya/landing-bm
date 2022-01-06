@@ -1,145 +1,217 @@
 /**
  * Header
  */
+.header {
+  position: relative;
+  z-index: 3;
+}
 
 .navbar {
-    padding: 21px 0;
-    background: $dark;
-    .menu {
-        padding-top: 4px;
-        color: white;
-        text-transform: uppercase;
-        .menu__item {
-            border-radius: 10px 10px 0 0;
-            padding-top: 14px;
-            @include bp-max(1400px) {
-                padding-top: 10px;
-                font-size: 14px;
-            }
-        }
+  padding: 21px 0;
+  background: $dark;
+  .menu {
+    padding-top: 4px;
+    color: white;
+    text-transform: uppercase;
+    .menu__item {
+      border-radius: 10px 10px 0 0;
+      padding-top: 14px;
+      @include bp-max(1400px) {
+        padding-top: 10px;
+        font-size: 14px;
+      }
     }
+  }
 }
 
 .navbar .menu,
 .navbar__wrap {
-    @include bp-max(1300px) {
-        display: none;
-    }
+  @include bp-max(1300px) {
+    display: none;
+  }
+}
+
+/**
+ * Mobile menu
+ */
+
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding: 21px 0;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  background: $dark;
+  transition: opacity 0.25s ease-in-out;
+  z-index: 13;
+  opacity: 0;
+  pointer-events: none;
+  &.active {
+    width: 100%;
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: #202020;
+    padding: 0;
+  }
+
+  .menu {
+    display: block;
+    font-size: 20px;
+  }
+
+  .dropdown-content {
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+    color: #202020;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu__item > ul {
+    font-size: 16px;
+  }
+  &__wrap {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-bottom: 15px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+  }
 }
 
 .burger {
-    background: url(../img/hamburger.svg) no-repeat center/contain;
-    width: 28px;
-    height: 24px;
-    z-index: 222;
-    margin-left: 19px;
-    position: relative;
-    @include bp(1300px) {
-        display: none;
-    }
-    @include bp-max(430px) {
-        width: 18px;
-        height: 18px;
-        margin-left: 12px;
-    }
-    &.active {
-        background: url(../img/close.svg) no-repeat center/contain;
-    }
+  background: url(../img/hamburger.svg) no-repeat center/contain;
+  width: 28px;
+  height: 24px;
+  z-index: 222;
+  margin-left: 19px;
+  position: relative;
+  @include bp(1300px) {
+    display: none;
+  }
+  @include bp-max(430px) {
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+  }
+  &.active {
+    background: url(../img/close.svg) no-repeat center/contain;
+  }
 }
 
 .logo {
-    line-height: 0;
-    margin-right: 60px;
-    @include bp-max(1400px) {
-        margin-right: 20px;
-        >img {
-            width: 150px;
-        }
+  line-height: 0;
+  margin-right: 60px;
+  @include bp-max(1400px) {
+    margin-right: 20px;
+    > img {
+      width: 150px;
     }
-    >img {
-        @include bp-max(430px) {
-            width: 100px;
-        }
+  }
+  > img {
+    @include bp-max(430px) {
+      width: 100px;
     }
+  }
 }
 
 .menu__item {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
 }
 
 .button-signin:hover,
 .button-join:hover {
-    color: $orange-dark;
+  color: $orange-dark;
 }
-
 
 /**
  * Dropdown
  */
 
 .menu-dropdown-item {
-    position: relative;
+  position: relative;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  width: 135px;
+  &::after {
+    content: "";
     transition: all 0.15s ease-in-out;
-    cursor: pointer;
-    width: 135px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 55%;
+    width: 10px;
+    height: 6px;
+    background: url(../img/icons/arrow-chevron.svg) center center no-repeat;
+    z-index: 2;
+  }
+  &.active {
+    background-color: #000;
+    > .dropdown-content {
+      visibility: visible;
+      opacity: 1;
+    }
     &::after {
-        content: "";
-        transition: all 0.15s ease-in-out;
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 55%;
-        width: 10px;
-        height: 6px;
-        background: url(../img/icons/arrow-chevron.svg) center center no-repeat;
-        z-index: 2;
+      transform: rotate(180deg);
     }
-    &.active {
-        background-color: #000;
-        >.dropdown-content {
-            visibility: visible;
-            opacity: 1;
-        }
-        &::after {
-            transform: rotate(180deg);
-        }
-    }
+  }
 }
 
 .dropdown-content {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    background-color: black;
-    width: 135px;
-    z-index: 1;
-    padding: 10px 10px 10px;
-    left: 0;
-    transition: all 0.15s ease-in-out;
-    border-radius: 0 0 10px 10px;
-    a {
-        color: #c8c8c8;
-        padding: 8px 0px;
-        text-decoration: none;
-        display: block;
-        width: 100%;
-        text-transform: initial;
-    }
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  background-color: black;
+  width: 135px;
+  z-index: 1;
+  padding: 10px 10px 10px;
+  left: 0;
+  transition: all 0.15s ease-in-out;
+  border-radius: 0 0 10px 10px;
+  a {
+    color: #c8c8c8;
+    padding: 8px 0px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-transform: initial;
+  }
 }
 
 .userbar {
-    display: flex;
-    background: black;
-    padding: 12px 12px;
-    color: $orange-dark;
-    line-height: 1.4;
-    font-weight: 600;
-    font-size: 14px;
-    align-items: center;
-    border-radius: 10px;
-    >div {
-        padding: 0 10px;
-    }
+  display: flex;
+  background: black;
+  padding: 12px 12px;
+  color: $orange-dark;
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 14px;
+  align-items: center;
+  border-radius: 10px;
+  > div {
+    padding: 0 10px;
+  }
 }

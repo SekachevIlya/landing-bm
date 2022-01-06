@@ -38,7 +38,7 @@
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <nav class="d-flex align-items-center">
                     <a href="<?php echo home_url(); ?>" class="logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.svg" alt="" />
                     </a>
                     <?php
                     wp_nav_menu(array(
@@ -68,19 +68,19 @@
             </div>
         </div>
 
-
         <div class="mobile-menu" id="mobile-menu">
-            <?php if (get_field('first_btn_name_header', 'option') || get_field('link_first_btn_header', 'option')) { ?>
-                <a href="<?php esc_url(the_field('link_first_btn_header', 'option')); ?>" class="button-signin" rel="nofollow noopener noreferrer" target="_blank"><?php esc_attr(the_field('first_btn_name_header', 'option')); ?></a>
-            <?php } ?>
-            <?php if (get_field('second_btn_name_header', 'option') || get_field('link_second_btn_header', 'option')) { ?>
-                <a href="<?php esc_url(the_field('link_second_btn_header', 'option')); ?>" class="button-join" rel="nofollow noopener noreferrer" target="_blank"><?php esc_attr(the_field('second_btn_name_header', 'option')); ?></a>
-            <?php } ?>
+
+            <div class="container-fluid">
+                <span class="logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.svg" alt="" />
+                </span>
+            </div>
+
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'menu-header',
                 'menu_class'    => 'menu'
             ));
             ?>
-        </div>
+
     </header>

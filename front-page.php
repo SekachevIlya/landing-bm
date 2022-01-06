@@ -5,7 +5,7 @@
         <div class="content">
             <h1 class="header heading text-white">Trade crypto with BitMelech</h1>
 
-            <p class="description text-white">One sophisticated and user friendly platform to buy, sell and trade hundreds of cryptocurrencies. Large volumes and low fees.</p>
+            <p class="description text-gray">One sophisticated and user friendly platform to buy, sell and trade hundreds of cryptocurrencies. Large volumes and low fees.</p>
 
             <p>
                 <a href="<?php esc_url(the_field('first_btn_link_offer')); ?>" class="button offer__button" rel="nofollow noopener noreferrer" target="_blank">
