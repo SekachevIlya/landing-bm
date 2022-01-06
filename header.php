@@ -50,16 +50,16 @@
 
                 <div class="navbar__wrap">
                     <div class="userbar">
-                        <div class="selectable js-toggle">
+                        <div class="item selectable js-toggle">
                             <span>EUR</span>
                         </div>
-                        <div class="selectable js-toggle">
+                        <div class="item selectable js-toggle">
                             <span>ENG</span>
                         </div>
-                        <!-- <div class="d-flex align-items-center">
+                        <!-- <div class="item d-flex align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/cog.svg" alt="Cog icon">
                         </div> -->
-                        <div class="d-flex align-items-center">
+                        <div class="item d-flex align-items-center">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/user.svg" alt="User icon">
                         </div>
                     </div>
@@ -82,5 +82,28 @@
                 'menu_class'    => 'menu'
             ));
             ?>
+
+            <div class="container-fluid">
+                <div class="navbar__wrap">
+                    <div class="userbar">
+                        <div class="d-flex">
+                            <div class="item selectable js-toggle">
+                                <span>EUR</span>
+                            </div>
+                            <div class="item selectable js-toggle">
+                                <span>ENG</span>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <!-- <div class="item d-flex align-items-center">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/cog.svg" alt="Cog icon">
+                            </div> -->
+                            <div class="item d-flex align-items-center">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/user.svg" alt="User icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     </header>

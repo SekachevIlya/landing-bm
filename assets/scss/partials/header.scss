@@ -39,7 +39,9 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  padding: 21px 0;
+  padding: 21px 0 12px;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   overflow-y: auto;
@@ -48,39 +50,68 @@
   z-index: 13;
   opacity: 0;
   pointer-events: none;
+
   &.active {
     width: 100%;
     pointer-events: all;
     opacity: 1;
   }
 
-  a {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-    color: #202020;
-    padding: 0;
-  }
-
   .menu {
     display: block;
-    font-size: 20px;
+    flex-grow: 1;
+    margin-bottom: 16px;
+    .menu__item {
+      padding: 12px 12px 0;
+      /**
+       * @see .container-fluid
+       */
+      @include bp(768px) {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      margin: 0;
+      color: white;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      &.menu-dropdown-item {
+        width: 100%;
+        > .dropdown-content {
+          height: 0;
+        }
+        &.active {
+          > .dropdown-content {
+            height: auto;
+          }
+        }
+      }
+    }
+    .dropdown-content {
+      // display: block;
+      position: static;
+      width: auto;
+      background: none;
+      color: #202020;
+      box-shadow: none;
+      margin: 0;
+      padding: 0;
+      a {
+        color: #c8c8c8;
+      }
+    }
   }
 
-  .dropdown-content {
+  .navbar__wrap {
     display: block;
-    position: static;
-    width: auto;
-    background: none;
-    color: #202020;
-    box-shadow: none;
-    margin: 0;
-    padding: 0;
+  }
+  .userbar {
+    justify-content: space-between;
+    padding: 12px 20px;
   }
 
-  .menu__item > ul {
-    font-size: 16px;
-  }
   &__wrap {
     display: -moz-flex;
     display: -ms-flex;
@@ -156,17 +187,20 @@
   transition: all 0.15s ease-in-out;
   cursor: pointer;
   width: 135px;
-  &::after {
-    content: "";
-    transition: all 0.15s ease-in-out;
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 55%;
-    width: 10px;
-    height: 6px;
-    background: url(../img/icons/arrow-chevron.svg) center center no-repeat;
-    z-index: 2;
+  > a {
+    position: relative;
+    &::after {
+      content: "";
+      transition: all 0.15s ease-in-out;
+      display: block;
+      position: absolute;
+      right: -24px;
+      top: 6px;
+      width: 10px;
+      height: 6px;
+      background: url(../img/icons/arrow-chevron.svg) center center no-repeat;
+      z-index: 2;
+    }
   }
   &.active {
     background-color: #000;
@@ -174,7 +208,7 @@
       visibility: visible;
       opacity: 1;
     }
-    &::after {
+    > a::after {
       transform: rotate(180deg);
     }
   }
@@ -211,7 +245,7 @@
   font-size: 14px;
   align-items: center;
   border-radius: 10px;
-  > div {
+  .item {
     padding: 0 10px;
   }
 }

@@ -1217,7 +1217,9 @@ p {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  padding: 21px 0;
+  padding: 21px 0 12px;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   overflow-y: auto;
@@ -1232,19 +1234,40 @@ p {
   pointer-events: all;
   opacity: 1;
 }
-.mobile-menu a {
-  display: block;
-  text-align: center;
-  margin: 20px auto;
-  color: #202020;
-  padding: 0;
-}
 .mobile-menu .menu {
   display: block;
-  font-size: 20px;
+  flex-grow: 1;
+  margin-bottom: 16px;
 }
-.mobile-menu .dropdown-content {
-  display: block;
+.mobile-menu .menu .menu__item {
+  padding: 12px 12px 0;
+  /**
+   * @see .container-fluid
+   */
+  margin: 0;
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu .menu .menu__item {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+.mobile-menu .menu .menu__item.menu-dropdown-item {
+  width: 100%;
+}
+.mobile-menu .menu .menu__item.menu-dropdown-item > .dropdown-content {
+  height: 0;
+}
+.mobile-menu .menu .menu__item.menu-dropdown-item.active > .dropdown-content {
+  height: auto;
+}
+.mobile-menu .menu .dropdown-content {
   position: static;
   width: auto;
   background: none;
@@ -1253,8 +1276,15 @@ p {
   margin: 0;
   padding: 0;
 }
-.mobile-menu .menu__item > ul {
-  font-size: 16px;
+.mobile-menu .menu .dropdown-content a {
+  color: #c8c8c8;
+}
+.mobile-menu .navbar__wrap {
+  display: block;
+}
+.mobile-menu .userbar {
+  justify-content: space-between;
+  padding: 12px 20px;
 }
 .mobile-menu__wrap {
   display: -moz-flex;
@@ -1336,13 +1366,16 @@ p {
   cursor: pointer;
   width: 135px;
 }
-.menu-dropdown-item::after {
+.menu-dropdown-item > a {
+  position: relative;
+}
+.menu-dropdown-item > a::after {
   content: "";
   transition: all 0.15s ease-in-out;
   display: block;
   position: absolute;
-  right: 20px;
-  top: 55%;
+  right: -24px;
+  top: 6px;
   width: 10px;
   height: 6px;
   background: url(../img/icons/arrow-chevron.svg) center center no-repeat;
@@ -1355,7 +1388,7 @@ p {
   visibility: visible;
   opacity: 1;
 }
-.menu-dropdown-item.active::after {
+.menu-dropdown-item.active > a::after {
   transform: rotate(180deg);
 }
 
@@ -1391,7 +1424,7 @@ p {
   align-items: center;
   border-radius: 10px;
 }
-.userbar > div {
+.userbar .item {
   padding: 0 10px;
 }
 
