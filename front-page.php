@@ -133,10 +133,10 @@
 
 <section class="making-bitmelech">
     <div class="container">
-        <h2 class="heading">Making your first steps with BitMelech</h2>
+        <h2 class="heading text-dark">Making your first steps with BitMelech</h2>
 
-        <div class="making-block mt50">
-            <div class="col">
+        <div class="row mt50">
+            <div class="col-12 col-md-4 mb-10">
                 <div class="making bg-brown">
                     <div>
                         <span>Getting signed in</span>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-4 mb-10">
                 <div class="making bg-dark__blue">
                     <div>
                         <span>KYC</span>
@@ -156,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-4 mb-10">
                 <div class="making bg-dark__blue">
                     <div>
                         <span>Buy your first crypto</span>
@@ -207,10 +207,10 @@
 
 <section class="why-bitmelech">
     <div class="container">
-        <h2 class="heading">Why BitMelech</h2>
+        <h2 class="heading text-dark">Why BitMelech</h2>
 
-        <div class="row-4 mt50">
-            <div class="col">
+        <div class="row mt50">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-blue">
                     <div>
                         <span>Fast 24/7 Support</span>
@@ -221,7 +221,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-blue">
                     <div>
                         <span>Easily Buy Crypto with fiat</span>
@@ -232,7 +232,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-blue">
                     <div>
                         <span>Visa Crypto Card</span>
@@ -243,7 +243,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-blue">
                     <div>
                         <span>NFT Marketplace</span>
@@ -254,7 +254,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-blue">
                     <div>
                         <span>Low fees</span>
@@ -265,7 +265,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-blue">
                     <div>
                         <span>Advanced trading APIs</span>
@@ -276,7 +276,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-blue">
                     <div>
                         <span>Security (2FA, biometrics)</span>
@@ -287,7 +287,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-blue">
                     <div>
                         <span>Legal Compliance (Why KYC)</span>
@@ -298,7 +298,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-blue">
                     <div>
                         <span>24h trading volumes</span>
@@ -309,7 +309,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-blue">
                     <div>
                         <span>IEO</span>
@@ -327,44 +327,43 @@
     <div class="container">
         <h2 class="heading">Our Partners</h2>
 
-        <div class="row-4 mt50">
-            <div class="col">
-
+        <div class="row mt50">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-black">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-partners.png" alt="">
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-black">
                     <span>LOGO</span>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-black">
                     <span>LOGO</span>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-black">
                     <span>LOGO</span>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-black">
                     <span>LOGO</span>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-black">
                     <span>LOGO</span>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-black">
                     <span>LOGO</span>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-3 mb-20">
                 <div class="partner-block bg-black">
                     <span>LOGO</span>
                 </div>

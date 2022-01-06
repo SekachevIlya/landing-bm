@@ -44,18 +44,18 @@
  * Text color
  */
 .text-dark {
-  color: $dark;
+  color: $dark !important;
 }
 
 .text-white {
-  color: #fff;
+  color: #fff !important;
 }
 
 .text-gray {
-  color: $white-500;
+  color: $white-500 !important;
 }
 .text-primary {
-  color: $orange-light;
+  color: $orange-light !important;
 }
 
 /**
@@ -63,6 +63,12 @@
  */
 .mb-25 {
   margin-bottom: 25px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 /**

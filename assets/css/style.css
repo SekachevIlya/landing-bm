@@ -55,19 +55,19 @@
  * Text color
  */
 .text-dark {
-  color: #061728;
+  color: #061728 !important;
 }
 
 .text-white {
-  color: #fff;
+  color: #fff !important;
 }
 
 .text-gray {
-  color: #c8c8c8;
+  color: #c8c8c8 !important;
 }
 
 .text-primary {
-  color: #fe8d30;
+  color: #fe8d30 !important;
 }
 
 /**
@@ -75,6 +75,14 @@
  */
 .mb-25 {
   margin-bottom: 25px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 /**
@@ -150,11 +158,13 @@
  */
 .row {
   display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-left: -10px;
+  margin-right: -10px;
   flex-wrap: wrap;
+}
+.row > * {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .row .col-12 {
   flex-basis: 100%;
@@ -167,14 +177,29 @@
     flex-basis: 33.33%;
   }
 }
+@media screen and (min-width: 576px) {
+  .row .col-sm-6 {
+    flex-basis: 50%;
+  }
+}
 @media screen and (min-width: 768px) {
   .row .col-md-2 {
     flex-basis: 16.66%;
   }
 }
 @media screen and (min-width: 768px) {
-  .row .col-md-2 {
-    flex-basis: 16.66%;
+  .row .col-md-3 {
+    flex-basis: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .row .col-md-4 {
+    flex-basis: 33.33%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .row .col-lg-4 {
+    flex-basis: 33.33%;
   }
 }
 
@@ -1624,11 +1649,6 @@ p {
 .why-bitmelech {
   background-color: white;
 }
-.why-bitmelech .heading {
-  height: 80px;
-  font-size: 72px;
-  color: #061728;
-}
 .why-bitmelech .partner-block {
   justify-content: space-between;
   font-size: 20px;
@@ -1640,20 +1660,14 @@ p {
  * Section "Making your first steps with BitMelech"
  */
 .making-bitmelech .heading {
-  width: 804px;
-  height: 160px;
-  font-size: 66px;
-  color: #000;
-}
-.making-bitmelech .making-block {
-  display: flex;
+  max-width: 804px;
 }
 .making-bitmelech .making {
   position: relative;
-  width: 380px;
+  min-width: 300px;
   height: 238px;
   border-radius: 10px;
-  margin: 0 20px 0 0;
+  overflow: hidden;
 }
 .making-bitmelech .making span {
   position: absolute;
@@ -1670,6 +1684,10 @@ p {
 }
 .making-bitmelech .bg-brown img {
   margin: 18px 5px 20px 56px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 .making-bitmelech .bg-dark__blue {
   display: flex;

@@ -194,11 +194,6 @@
  */
 .why-bitmelech {
   background-color: white;
-  .heading {
-    height: 80px;
-    font-size: 72px;
-    color: #061728;
-  }
   .partner-block {
     justify-content: space-between;
     font-size: 20px;
@@ -212,20 +207,15 @@
  */
 .making-bitmelech {
   .heading {
-    width: 804px;
-    height: 160px;
-    font-size: 66px;
-    color: #000;
+    max-width: 804px;
   }
-  .making-block {
-    display: flex;
-  }
+
   .making {
     position: relative;
-    width: 380px;
+    min-width: 300px;
     height: 238px;
     border-radius: 10px;
-    margin: 0 20px 0 0;
+    overflow: hidden;
     span {
       position: absolute;
       font-size: 30px;
@@ -241,6 +231,10 @@
     background: #151524;
     img {
       margin: 18px 5px 20px 56px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
     }
   }
   .bg-dark__blue {
