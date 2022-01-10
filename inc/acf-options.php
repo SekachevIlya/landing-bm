@@ -8,5 +8,5 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false,
 	));
+	add_action( 'admin_menu', 'acf_add_options_page', 99 );
 }	
-add_action( 'admin_menu', 'acf_add_options_page', 99 );

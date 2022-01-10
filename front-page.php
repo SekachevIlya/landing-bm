@@ -3,371 +3,276 @@
 <section class="home--first-section">
     <div class="container">
         <div class="content">
-            <h1 class="header heading text-white">Trade crypto with BitMelech</h1>
+            <h1 class="header heading text-white">Start Buyin & Selling Crypto Today</h1>
 
-            <p class="description text-gray">One sophisticated and user friendly platform to buy, sell and trade hundreds of cryptocurrencies. Large volumes and low fees.</p>
+            <p class="description text-white">Enjoy trading over 1000 paris with the most popular coins</p>
 
             <p>
-                <a href="<?php esc_url(the_field('first_btn_link_offer')); ?>" class="button offer__button" rel="nofollow noopener noreferrer" target="_blank">
-                    <?php esc_attr(the_field('first_btn_name_offer')); ?></a>
+                <a href="#" class="btn btn-primary" rel="nofollow noopener noreferrer" target="_blank">
+                    Start trading
+                </a>
+                <a href="#" class="btn btn-primary" rel="nofollow noopener noreferrer" target="_blank">
+                    View All Market
+                </a>
             </p>
-
-            <!-- <?php if (get_field('start_of_the_offer_title') || get_field('middle_of_the_offer_title') || get_field('end_of_the_offer_title')) { ?>
-                <h1 class="offer__title"><?php esc_attr(the_field('start_of_the_offer_title')); ?>
-                    <span><?php esc_attr(the_field('middle_of_the_offer_title')); ?></span>
-                    <?php the_field('end_of_the_offer_title'); ?>
-                </h1>
-            <?php } ?>
-            <?php if (get_field('desc_of_the_offer')) { ?>
-                <div class="offer__desc"><?php esc_attr(the_field('desc_of_the_offer')); ?></div>
-            <?php } ?>
-            <div class="offer__wrap">
-                <?php if (get_field('first_btn_link_offer') || get_field('first_btn_name_offer')) { ?>
-                    
-            <a href="<?php esc_url(the_field('first_btn_link_offer')); ?>" class="button offer__button" rel="nofollow noopener noreferrer" target="_blank">
-                <?php esc_attr(the_field('first_btn_name_offer')); ?></a>
-        <?php } ?>
-
-        <a href="<?php esc_url(the_field('second_btn_name_offer')); ?>" class="button offer__button" rel="nofollow noopener noreferrer" target="_blank">
-            <?php esc_attr(the_field('second_btn_name_offer')); ?>
-        </a>
-        </div> -->
-            <!-- </div> -->
         </div>
-        <?php if (have_rows('listCurrencies', 'option')) : ?>
-            <div class="swiper-container coins-slider">
-                <div class="swiper-wrapper">
-                    <?php while (have_rows('listCurrencies', 'option')) : the_row(); ?>
-                        <div class="swiper-slide">
-                            <div class="coins-slide" style="background-image: url(<?php esc_url(the_sub_field('iconCurrency', 'option')); ?>)">
-                                <?php if (get_sub_field('currencyID', 'option')) { ?>
-                                    <span class="coins-name">
-                                        <?php
-                                        $short_name = str_replace(array('USDT', 'USD'), '', get_sub_field('currencyID', 'option'));
-                                        echo $short_name; ?>/USDT
-                                    </span>
-                                <?php } ?>
-                                <span class="coins-price">$<span class="coins-price-slide-num">0</span></span>
-                                <span class="coins-rate coins-rate-slide coins-rate_plus"><span class="coins-rate-slide-num">0</span>%</span>
-                            </div>
+</section>
+
+<section class="get-started">
+    <div class="container">
+        <h2 class="heading">Get Started in 3 Easy Steps</h2>
+
+        <p class="subheading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis optio aut ad minus
+        </p>
+
+        <div class="row mt50">
+            <div class="col-12 col-md-4 mb-10">
+                <div class="get-started-item">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+
+                    <h5 class="title">Register an Account</h5>
+
+                    <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-10">
+                <div class="get-started-item">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-2.png" alt="">
+
+                    <h5 class="title">Deposit funds</h5>
+
+                    <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-10">
+                <div class="get-started-item">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-3.png" alt="">
+
+                    <h5 class="title">Start Trading</h5>
+
+                    <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="features">
+    <div class="container">
+        <h2 class="heading">Bitmelech Features List</h2>
+
+        <p class="subheading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis optio aut ad minus
+        </p>
+
+        <div class="row mt50">
+            <div class="col-12 col-md-4 mb-10">
+                <div class="features-card mb-10">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+
+                    <div class="content-wrap">
+                        <h5 class="title">Buy crypto with card</h5>
+
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </p>
+                    </div>
+                </div>
+                <div class="features-card mb-10">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+
+                    <div class="content-wrap">
+                        <h5 class="title">Buy crypto with card</h5>
+
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-img-col col-12 col-md-4 mb-10">
+                <div class="main-img--wrap">
+                    <img class="main-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-10">
+                <div class="features-card mb-10">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+
+                    <div class="content-wrap">
+                        <h5 class="title">Buy crypto with card</h5>
+
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </p>
+                    </div>
+                </div>
+                <div class="features-card mb-10">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+
+                    <div class="content-wrap">
+                        <h5 class="title">Buy crypto with card</h5>
+
+                        <p class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="tools">
+    <div class="container">
+        <h2 class="heading">Advanced Training Tools</h2>
+
+        <div class="slider">
+            <div class="row mt50">
+                <div class="slider-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
                         </div>
-                    <?php endwhile; ?>
+                        <div class="col-md-6">
+                            <h4 class="title">Bitmelech Features List</h4>
+                            <p class="content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos doloribus unde, quia dolorum cupiditate aperiam sunt pariatur ipsam atque ipsa, nemo perferendis adipisci incidunt dolor dolores nisi consequuntur suscipit
+                            </p>
+
+                            <a href="#" class="btn btn-primary">
+                                Advanced Order
+                            </a>
+                            <a href="#" class="mb-10">
+                                Explore our REST & WebSocket APIs
+                            </a>
+                            <a href="#" class="mb-10">
+                                Explore our FIX Connectivity
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        <?php endif; ?>
-</section>
 
-<section class="start bg-dark" id="start">
-    <div class="container">
-        <?php if (get_field('section_title_stages') || get_field('highlighted_text_in_the_stages_title')) { ?>
-            <h2 class="heading text-white">
-                BTC, ETH and most value 24h or 7d
-            </h2>
-        <?php } ?>
-        <!-- <?php if (have_rows('initial_steps')) { ?>
-            <div class="steps">
-                <?php while (have_rows('initial_steps')) {
-                        the_row(); ?>
-                    <div class="steps__item">
-                        <?php if (get_sub_field('step_icon_start')) { ?>
-                            <span class="steps__icon" style="background-image: url('<?php esc_url(the_sub_field('step_icon_start')); ?>')"></span>
-                        <?php } ?>
-                        <h3 class="steps__title"><?php esc_attr(the_sub_field('step_name_start')); ?></h3>
-                    </div>
-                <?php } ?>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
             </div>
-        <?php } ?> -->
-        <?php if (have_rows('listCurrencies', 'option')) { ?>
-            <table class="coinschart">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Last price</th>
-                        <th>24 Change</th>
-                        <th>Markets</th>
-                    </tr>
-                </thead>
-                <tbody id="coinschart-body">
-                    <?php while (have_rows('listCurrencies', 'option')) {
-                        the_row(); ?>
-                        <tr>
-                            <td>
-                                <?php if (get_sub_field('iconCurrency', 'option')) { ?>
-                                    <span class="coins-icon" style="background-image: url(<?php esc_url(the_sub_field('iconCurrency', 'option')); ?>)"></span>
-                                <?php } ?>
-                                <?php if (get_sub_field('currencyName', 'option')) { ?>
-                                    <span class="coins-name"><?php esc_attr(the_sub_field('currencyName', 'option')); ?></span>
-                                <?php } ?>
-                            </td>
-                            <td><span class="coins-price">$<span class="coins-price-table-desktop-num">0</span></span></td>
-                            <td><span class="coins-rate coins-rate-table-desktop coins-rate_plus"><span class="coins-rate-table-desktop-num">0</span>%</span></td>
-                            <td>
-                                <?php
-                                $currency_ID = mb_strtolower(get_sub_field('currencyID', 'option'));
-                                if (get_sub_field('currencyID', 'option')) { ?>
-                                    <div class="coins-chart"><canvas class="coins-chart" id="<?php echo $currency_ID; ?>" width="100%" height="33"></canvas></div>
-                                <?php } ?>
-                            </td>
-                            <!-- <td>
-                                <?php if (get_field('link_buy_currencies', 'option')) {
-                                    $short_name_currency = str_replace(array('usdt', 'usd'), '', $currency_ID);
-                                ?>
-                                    <a href="<?php esc_url(the_field('link_buy_currencies', 'option'));
-                                                echo $short_name_currency; ?>-to-usdt" class="button button_buy" rel="nofollow noopener" target="_blank">
-                                        Buy
-                                    </a>
-                                <?php } ?>
-                            </td> -->
-                            <!-- <td hidden>
-                                <span class="coins-price">$<span class="coins-price-table-mob-num">0</span></span>
-                                <span class="coins-rate coins-rate-table-mob coins-rate_plus"><span class="coins-rate-table-mob-num">0</span>%</span>
-                            </td> -->
-                        </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
-        <?php } ?>
-
+        </div>
     </div>
 </section>
 
-<section class="making-bitmelech">
+<section class="security">
     <div class="container">
-        <h2 class="heading text-dark">Making your first steps with BitMelech</h2>
+        <h2 class="heading">High Security and Rigorous Safeguards</h2>
 
-        <div class="row mt50">
-            <div class="col-12 col-md-4 mb-10">
-                <div class="making bg-brown">
-                    <div>
-                        <span>Getting signed in</span>
-                    </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
-                    </div>
+        <p class="subheading">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo tenetur dolorem adipisci fugit consequuntur delectus aperiam, et impedit minima voluptates expedita
+        </p>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="item color-purple">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+
+                    <div class="title">Custody</div>
+
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta perspiciatis quia ducimus vel asperiores iste, veniam </p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-10">
-                <div class="making bg-dark__blue">
-                    <div>
-                        <span>KYC</span>
-                    </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-2.png" alt="">
-                    </div>
+            <div class="col-md-3">
+                <div class="item color-green">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+
+                    <div class="title">Cybersecurity</div>
+
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta perspiciatis quia ducimus vel asperiores iste, veniam </p>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-10">
-                <div class="making bg-dark__blue">
-                    <div>
-                        <span>Buy your first crypto</span>
-                    </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-3.png" alt="">
-                    </div>
+            <div class="col-md-3">
+                <div class="item color-orange">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+
+                    <div class="title">Regularity Compliance</div>
+
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta perspiciatis quia ducimus vel asperiores iste, veniam </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="item color-red">
+                    <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+
+                    <div class="title">Start Trading</div>
+
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta perspiciatis quia ducimus vel asperiores iste, veniam </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="trade bg-dark">
+<section class="subscribe">
     <div class="container">
-        <h2 class="heading text-white">Trade with Comfort and Ease</h2>
+        <h3 class="heading">subscribe our newsletter for get updates <br /> We don't make any spam</h3>
 
-        <div class="tabs">
-            <span role="button" class="active" id="simple">Simple interface</span>
-            <span role="button" id="advanced">Advanced interface</span>
-        </div>
-
-        <div class="content">
-            <div class="left">
-                <div class="graphic-item">
-                    <img class="graphic-item--bg-image" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/waves.png" alt="Graphic's background">
-
-                    <div class="phone simple">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/phone.png" alt="" />
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" placeholder="Email Address">
             </div>
-            <div class="right">
-                <ul>
-                    <li>Mobile</li>
-                    <li>Wallets</li>
-                    <li>Swap</li>
-                    <li>Spot Trading</li>
-                    <li>Favourites</li>
-                    <li>Web</li>
-                    <li>Flexible interface</li>
-                </ul>
+            <div class="col-md-6">
+                <button class="btn btn-primary">Subscribe</button>
             </div>
         </div>
     </div>
-
-</section>
-
-<section class="why-bitmelech">
-    <div class="container">
-        <h2 class="heading text-dark">Why BitMelech</h2>
-
-        <div class="row mt50">
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-blue">
-                    <div>
-                        <span>Fast 24/7 Support</span>
-                    </div>
-
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-1.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-blue">
-                    <div>
-                        <span>Easily Buy Crypto with fiat</span>
-                    </div>
-
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-2.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-blue">
-                    <div>
-                        <span>Visa Crypto Card</span>
-                    </div>
-
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-3.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-blue">
-                    <div>
-                        <span>NFT Marketplace</span>
-                    </div>
-
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-4.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-blue">
-                    <div>
-                        <span>Low fees</span>
-                    </div>
-
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-5.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-blue">
-                    <div>
-                        <span>Advanced trading APIs</span>
-                    </div>
-
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-6.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-blue">
-                    <div>
-                        <span>Security (2FA, biometrics)</span>
-                    </div>
-
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-7.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-blue">
-                    <div>
-                        <span>Legal Compliance (Why KYC)</span>
-                    </div>
-
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-8.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-blue">
-                    <div>
-                        <span>24h trading volumes</span>
-                    </div>
-
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-9.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-blue">
-                    <div>
-                        <span>IEO</span>
-                    </div>
-
-                    <div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bitmelech-10.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
 </section>
 
 <section class="partners">
     <div class="container">
-        <h2 class="heading">Our Partners</h2>
+        <h3 class="heading">Partners Logo</h3>
 
-        <div class="row mt50">
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-black">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-partners.png" alt="">
-                </div>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
             </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-black">
-                    <span>LOGO</span>
-                </div>
+            <div class="col-md-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
             </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-black">
-                    <span>LOGO</span>
-                </div>
+            <div class="col-md-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
             </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-black">
-                    <span>LOGO</span>
-                </div>
+            <div class="col-md-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
             </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-black">
-                    <span>LOGO</span>
-                </div>
+            <div class="col-md-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
             </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-black">
-                    <span>LOGO</span>
-                </div>
+            <div class="col-md-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
             </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-black">
-                    <span>LOGO</span>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-20">
-                <div class="partner-block bg-black">
-                    <span>LOGO</span>
-                </div>
-            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+        <div class="heading">Write a Message</div>
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa soluta cum omnis vel doloribus quaerat fugit nobis placeat
         </div>
     </div>
 </section>
