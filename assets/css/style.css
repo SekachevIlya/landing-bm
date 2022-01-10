@@ -38,7 +38,7 @@
 }
 
 .bg-dark {
-  background-color: #061728;
+  background-color: #071029;
 }
 
 .bg-black {
@@ -55,7 +55,7 @@
  * Text color
  */
 .text-dark {
-  color: #061728 !important;
+  color: #071029 !important;
 }
 
 .text-white {
@@ -67,12 +67,16 @@
 }
 
 .text-primary {
-  color: #fe8d30 !important;
+  color: #ffaa17 !important;
 }
 
 /**
  * Margin / padding
  */
+.mt50 {
+  margin-top: 50px;
+}
+
 .mb-25 {
   margin-bottom: 25px;
 }
@@ -112,9 +116,8 @@
   height: 48px;
   line-height: 48px;
   padding: 0 24px;
-  border: 1px solid #fe8d30;
   border-radius: 12px;
-  background: #fe8d30;
+  background: #ffaa17;
   color: white;
   font-weight: 700;
   font-size: 16px;
@@ -130,7 +133,7 @@
 .button:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  background: #fe8d30;
+  background: #ffaa17;
   color: white;
 }
 
@@ -142,15 +145,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
-}
-
-.mt50 {
-  margin-top: 50px;
-}
-
-.heading {
-  font-size: 72px;
-  color: #fff;
 }
 
 /**
@@ -885,25 +879,39 @@ button.swiper-pagination-bullet {
  * Partials
  */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Quicksand";
+  font-weight: 300;
+  font-style: normal;
+  src: url(../fonts/Quicksand/Quicksand-Light.ttf);
+  src: url("../fonts/Quicksand/Quicksand-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Quicksand";
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/Roboto-Regular.eot);
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg"), url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype");
+  src: url(../fonts/Quicksand/Quicksand-Regular.ttf);
+  src: url("../fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Quicksand";
   font-weight: 500;
   font-style: normal;
-  src: url(../fonts/Roboto-Medium.eot);
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.svg#Roboto-Medium") format("svg"), url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype");
+  src: url(../fonts/Quicksand/Quicksand-Medium.ttf);
+  src: url("../fonts/Quicksand/Quicksand-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Quicksand";
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/Quicksand/Quicksand-SemiBold.ttf);
+  src: url("../fonts/Quicksand/Quicksand-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Quicksand";
   font-weight: 700;
   font-style: normal;
-  src: url(../fonts/Roboto-Bold.eot);
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg"), url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype");
+  src: url(../fonts/Quicksand/Quicksand-Bold.ttf);
+  src: url("../fonts/Quicksand/Quicksand-Bold.ttf") format("truetype");
 }
 ::-webkit-input-placeholder {
   color: inherit;
@@ -1148,12 +1156,11 @@ body {
   color: white;
   background: #080f29 !important;
   line-height: 1.15;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
   font-size: 16px;
   letter-spacing: 0em;
   position: relative;
-  background-color: #fff;
 }
 
 section {
@@ -1181,7 +1188,7 @@ p {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1350px;
   padding: 0 15px;
   width: 100%;
   margin: 0 auto;
@@ -1211,7 +1218,7 @@ p {
 
 .navbar {
   padding: 21px 0;
-  background: #061728;
+  background: #071029;
 }
 .navbar .menu {
   padding-top: 4px;
@@ -1249,7 +1256,7 @@ p {
   top: 0;
   left: 0;
   overflow-y: auto;
-  background: #061728;
+  background: #071029;
   transition: opacity 0.25s ease-in-out;
   z-index: 13;
   opacity: 0;
@@ -1380,7 +1387,7 @@ p {
 
 .button-signin:hover,
 .button-join:hover {
-  color: #ff7300;
+  color: #ffaa17;
 }
 
 /**
@@ -1443,7 +1450,7 @@ p {
   display: flex;
   background: black;
   padding: 12px 12px;
-  color: #ff7300;
+  color: #ffaa17;
   line-height: 1.4;
   font-weight: 600;
   font-size: 14px;
@@ -1458,7 +1465,7 @@ p {
  * General
  */
 .heading {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 32px;
 }
@@ -1470,56 +1477,37 @@ p {
 }
 @media screen and (min-width: 768px) {
   .heading {
-    font-size: 72px;
+    font-size: 45px;
     line-height: 80px;
   }
+}
+
+.btn {
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: all 0.25s ease-in-out;
+}
+.btn--primary {
+  background: #ffaa17;
+}
+.btn--primary:hover {
+  background: #e39000;
 }
 
 /**
  * Homepage's main section
  */
 .home--first-section {
-  padding: 0;
-  padding-bottom: 60px;
-  background: #061728;
   position: relative;
 }
-.home--first-section > * {
-  position: relative;
-  z-index: 2;
-}
-.home--first-section::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: -110px;
-  width: 100%;
-  height: 100%;
-  background: url(../img/graphics/home-main.png) no-repeat;
-  background-size: cover;
-  z-index: 1;
-  background-position: top;
-}
-@media screen and (min-width: 768px) {
-  .home--first-section::before {
-    background-position: center;
-    top: 0;
-  }
-}
-.home--first-section .content {
-  padding: 30px 0;
-}
-@media screen and (min-width: 768px) {
-  .home--first-section .content {
-    padding: 100px 0;
-  }
-}
-.home--first-section .content .header {
+.home--first-section .header {
   max-width: 580px;
   margin-bottom: 13px;
 }
-.home--first-section .content .description {
+.home--first-section .description {
   max-width: 670px;
   font-weight: 500;
   font-size: 16px;
@@ -1527,192 +1515,11 @@ p {
   margin-bottom: 28px;
 }
 @media screen and (min-width: 768px) {
-  .home--first-section .content .description {
+  .home--first-section .description {
     font-size: 24px;
     line-height: 40px;
     margin-bottom: 28px;
   }
-}
-
-.offer__wrap {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.offer__button {
-  margin: 10px 0;
-}
-
-.offer__button:nth-of-type(2) {
-  margin-left: 20px;
-  color: #fff;
-  border-color: #fff;
-  background: transparent;
-}
-
-.offer__desc {
-  font-size: 28px;
-  margin: 30px 0 60px;
-}
-
-.offer__title span {
-  color: #f18933;
-}
-
-/**
-   * Section "BTC, ETH and most value 24h or 7d"
-   */
-.start h2 {
-  max-width: 800px;
-  margin-bottom: 60px;
-}
-
-/**
-   * Section "Trade with Comfort and Ease"
-   */
-.trade .heading {
-  max-width: 800px;
-  margin-bottom: 30px;
-}
-.trade .tabs {
-  color: #979797;
-  margin-bottom: 20px;
-}
-.trade .tabs > span {
-  display: inline-block;
-  margin-right: 40px;
-  cursor: pointer;
-  font-size: 32px;
-  line-height: 40px;
-}
-.trade .tabs .active {
-  color: white;
-}
-.trade .content {
-  display: flex;
-  width: 100%;
-}
-.trade .content .left {
-  flex-basis: 58.33%;
-  margin-right: 15px;
-}
-.trade .content .right {
-  margin-left: 15px;
-  flex-basis: 41.66%;
-}
-.trade .content .graphic-item {
-  position: relative;
-}
-.trade .content .graphic-item .graphic-item--bg-image {
-  position: absolute;
-  right: 0;
-  width: 809px;
-  max-width: none;
-  height: auto;
-  z-index: 1;
-}
-.trade .content .graphic-item .phone {
-  position: relative;
-  z-index: 2;
-  padding-top: 50px;
-  width: 326px;
-  height: 554px;
-  margin-left: 40px;
-}
-.trade .content ul li {
-  font-size: 24px;
-  line-height: 32px;
-  color: white;
-  margin-bottom: 16px;
-}
-.trade .content ul li::before {
-  content: "";
-  display: inline-block;
-  margin-right: 12px;
-  width: 10px;
-  height: 10px;
-  background-color: #fe8d30;
-  border-radius: 50%;
-  margin-bottom: 1px;
-}
-
-/**
-   * Section "Partners"
-   */
-.partners {
-  background-color: #061728;
-}
-
-/**
- * Section "Why BitMelech"
- */
-.why-bitmelech {
-  background-color: white;
-}
-.why-bitmelech .partner-block {
-  justify-content: space-between;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: left;
-}
-
-/**
- * Section "Making your first steps with BitMelech"
- */
-.making-bitmelech .heading {
-  max-width: 804px;
-}
-.making-bitmelech .making {
-  position: relative;
-  min-width: 300px;
-  height: 238px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.making-bitmelech .making span {
-  position: absolute;
-  font-size: 30px;
-  line-height: 40px;
-  color: white;
-  width: 262px;
-  bottom: 32px;
-  left: 32px;
-  z-index: 2;
-}
-.making-bitmelech .bg-brown {
-  background: #151524;
-}
-.making-bitmelech .bg-brown img {
-  margin: 18px 5px 20px 56px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-.making-bitmelech .bg-dark__blue {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #02101f;
-}
-.making-bitmelech .bg-dark__blue img {
-  position: absolute;
-  right: 8px;
-  bottom: 32px;
-  z-index: 1;
-}
-
-.partner-block {
-  height: 100%;
-  font-size: 32px;
-  line-height: 40px;
-  text-align: center;
-  padding: 20px 16px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .coinschart {
@@ -1835,7 +1642,7 @@ p {
   transition: color 0.25s ease-in-out;
 }
 .footer ul li a:hover {
-  color: #fe8d30;
+  color: #ffaa17;
 }
 
 /*# sourceMappingURL=style.css.map */

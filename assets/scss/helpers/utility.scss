@@ -55,12 +55,15 @@
   color: $white-500 !important;
 }
 .text-primary {
-  color: $orange-light !important;
+  color: $primary !important;
 }
 
 /**
  * Margin / padding
  */
+.mt50 {
+  margin-top: 50px;
+}
 .mb-25 {
   margin-bottom: 25px;
 }
@@ -101,9 +104,9 @@
   height: 48px;
   line-height: 48px;
   padding: 0 24px;
-  border: 1px solid $orange-light;
+  // border: 1px solid $primary;
   border-radius: 12px;
-  background: $orange-light;
+  background: $primary;
   color: white;
   font-weight: 700;
   font-size: 16px;
@@ -120,7 +123,7 @@
 .button:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  background: $orange-light;
+  background: $primary;
   color: white;
 }
 
@@ -133,12 +136,4 @@
   grid-gap: 10px;
 }
 
-.mt50 {
-  margin-top: 50px;
-}
-
-.heading {
-  font-size: 72px;
-  color: #fff;
-}
 

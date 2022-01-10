@@ -3,7 +3,7 @@
  */
 
 .heading {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   @include bp(400px) {
@@ -11,8 +11,24 @@
     line-height: 46px;
   }
   @include bp(768px) {
-    font-size: 72px;
+    font-size: 45px;
     line-height: 80px;
+  }
+}
+
+.btn {
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: all 0.25s ease-in-out;
+
+  &--primary {
+    background: $primary;
+    &:hover {
+      background: darken($primary, 10%);
+    }
   }
 }
 
@@ -21,244 +37,42 @@
  */
 
 .home--first-section {
-  padding: 0;
-  padding-bottom: 60px;
-  background: $dark;
   position: relative;
-  > * {
-    position: relative;
-    z-index: 2;
+  // > * {
+  //   position: relative;
+  //   z-index: 2;
+  // }
+  // &::before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   left: 0;
+  //   top: -110px;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: url(../img/graphics/home-main.png) no-repeat;
+  //   background-size: cover;
+  //   z-index: 1;
+  //   background-position: top;
+  //   @include bp(768px) {
+  //     background-position: center;
+  //     top: 0;
+  //   }
+  // }
+  .header {
+    max-width: 580px;
+    margin-bottom: 13px;
   }
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: -110px;
-    width: 100%;
-    height: 100%;
-    background: url(../img/graphics/home-main.png) no-repeat;
-    background-size: cover;
-    z-index: 1;
-    background-position: top;
+  .description {
+    max-width: 670px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 28px;
     @include bp(768px) {
-      background-position: center;
-      top: 0;
-    }
-  }
-  .content {
-    padding: 30px 0;
-    @include bp(768px) {
-      padding: 100px 0;
-    }
-    .header {
-      max-width: 580px;
-      margin-bottom: 13px;
-    }
-    .description {
-      max-width: 670px;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 24px;
+      line-height: 40px;
       margin-bottom: 28px;
-      @include bp(768px) {
-        font-size: 24px;
-        line-height: 40px;
-        margin-bottom: 28px;
-      }
     }
   }
-}
-
-.offer__wrap {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.offer__button {
-  margin: 10px 0;
-}
-
-.offer__button:nth-of-type(2) {
-  margin-left: 20px;
-  color: #fff;
-  border-color: #fff;
-  background: transparent;
-}
-
-.offer__desc {
-  font-size: 28px;
-  margin: 30px 0 60px;
-}
-
-.offer__title span {
-  color: #f18933;
-}
-
-/**
-   * Section "BTC, ETH and most value 24h or 7d"
-   */
-
-.start {
-  h2 {
-    max-width: 800px;
-    margin-bottom: 60px;
-  }
-}
-
-/**
-   * Section "Trade with Comfort and Ease"
-   */
-.trade {
-  .heading {
-    max-width: 800px;
-    margin-bottom: 30px;
-  }
-  .tabs {
-    color: #979797;
-    margin-bottom: 20px;
-    > span {
-      display: inline-block;
-      margin-right: 40px;
-      cursor: pointer;
-      font-size: 32px;
-      line-height: 40px;
-    }
-    .active {
-      color: white;
-    }
-  }
-  .content {
-    display: flex;
-    width: 100%;
-    .left {
-      flex-basis: 58.33%;
-      margin-right: 15px;
-    }
-    .right {
-      margin-left: 15px;
-      flex-basis: 41.66%;
-    }
-    .graphic-item {
-      position: relative;
-      .graphic-item--bg-image {
-        position: absolute;
-        right: 0;
-        width: 809px;
-        max-width: none;
-        height: auto;
-        z-index: 1;
-      }
-      .phone {
-        position: relative;
-        z-index: 2;
-        padding-top: 50px;
-        width: 326px;
-        height: 554px;
-        margin-left: 40px;
-      }
-    }
-
-    ul {
-      li {
-        font-size: 24px;
-        line-height: 32px;
-        color: white;
-        margin-bottom: 16px;
-        &::before {
-          content: "";
-          display: inline-block;
-          margin-right: 12px;
-          width: 10px;
-          height: 10px;
-          background-color: $orange-light;
-          border-radius: 50%;
-          margin-bottom: 1px;
-        }
-      }
-    }
-  }
-}
-
-/**
-   * Section "Partners"
-   */
-
-.partners {
-  background-color: #061728;
-}
-
-/**
- * Section "Why BitMelech"
- */
-.why-bitmelech {
-  background-color: white;
-  .partner-block {
-    justify-content: space-between;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: left;
-  }
-}
-
-/**
- * Section "Making your first steps with BitMelech"
- */
-.making-bitmelech {
-  .heading {
-    max-width: 804px;
-  }
-
-  .making {
-    position: relative;
-    min-width: 300px;
-    height: 238px;
-    border-radius: 10px;
-    overflow: hidden;
-    span {
-      position: absolute;
-      font-size: 30px;
-      line-height: 40px;
-      color: white;
-      width: 262px;
-      bottom: 32px;
-      left: 32px;
-      z-index: 2;
-    }
-  }
-  .bg-brown {
-    background: #151524;
-    img {
-      margin: 18px 5px 20px 56px;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-    }
-  }
-  .bg-dark__blue {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #02101f;
-    img {
-      position: absolute;
-      right: 8px;
-      bottom: 32px;
-      z-index: 1;
-    }
-  }
-}
-
-.partner-block {
-  height: 100%;
-  font-size: 32px;
-  line-height: 40px;
-  text-align: center;
-  padding: 20px 16px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
