@@ -3,10 +3,8 @@
  */
 
 .header {
-    font-family: "Quicksand", sans-serif;
     position: relative;
     z-index: 3;
-    background: #071029;
 }
 
 .first-block {
@@ -47,8 +45,11 @@
     }
 }
 
-.log:hover,
 .reg:hover {
+    color: $primary;
+}
+
+.log:hover {
     background: #1652f0;
     border-radius: 25px;
 }
