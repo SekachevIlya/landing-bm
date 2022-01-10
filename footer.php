@@ -16,56 +16,36 @@
     <div class="container">
         <div class="row">
             <div class="col-6 col-md-2 mb-25">
-                <h4 class="footer-title text-primary">About Us</h4>
+                <h4 class="footer-title text-primary">Contact Us</h4>
 
                 <ul>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">User agreement</a>
+                        <a href="#">Legal & Privacy</a>
                     </li>
                     <li>
-                        <a href="#">Fees</a>
+                        <a href="#">News & Media</a>
                     </li>
                     <li>
-                        <a href="#">Partners</a>
+                        <a href="#">Contact</a>
                     </li>
-                    <li>
-                        <a href="#">Terms</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy</a>
-                    </li>
-                    <li>
-                        <a href="#">Community</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact us</a>
-                    </li>
+
                 </ul>
             </div>
             <div class="col-6 col-md-2 mb-25">
-                <h4 class="footer-title text-primary">FAQ</h4>
+                <h4 class="footer-title text-primary">Product</h4>
 
                 <ul>
                     <li>
-                        <a href="#">Getting started</a>
+                        <a href="#">Spot Trade</a>
                     </li>
                     <li>
-                        <a href="#">How to buy</a>
+                        <a href="#">Margin Trade</a>
                     </li>
                     <li>
-                        <a href="#">2FA</a>
+                        <a href="#">Contract (Futures)</a>
                     </li>
                     <li>
                         <a href="#">KYC/AML</a>

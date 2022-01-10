@@ -34,76 +34,20 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <header class="header">
-        <div class="navbar">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
-                <nav class="d-flex align-items-center">
-                    <a href="<?php echo home_url(); ?>" class="logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.svg" alt="" />
-                    </a>
-                    <?php
-                    wp_nav_menu(array(
-                        'theme_location' => 'menu-header',
-                        'menu_class'    => 'menu'
-                    ));
-                    ?>
-                </nav>
 
-                <div class="navbar__wrap">
-                    <div class="userbar">
-                        <div class="item selectable js-toggle">
-                            <span>EUR</span>
-                        </div>
-                        <div class="item selectable js-toggle">
-                            <span>ENG</span>
-                        </div>
-                        <!-- <div class="item d-flex align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/cog.svg" alt="Cog icon">
-                        </div> -->
-                        <div class="item d-flex align-items-center">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/user.svg" alt="User icon">
-                        </div>
-                    </div>
-                </div>
-                <div class="burger" id="burger"></div>
-            </div>
-        </div>
+        <div class="container-fluid">
+            <div class="logo__item">
 
-        <div class="mobile-menu" id="mobile-menu">
-
-            <div class="container-fluid">
-                <span class="logo">
+                <a href="<?php echo home_url(); ?>" class="logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.svg" alt="" />
-                </span>
+                </a>
+            </div>
+            <div class="reg">
+                <a href="#">Register</a>
+            </div>
+            <div class="log">
+                <a href="#">Login</a>
             </div>
 
-            <?php
-            wp_nav_menu(array(
-                'theme_location' => 'menu-header',
-                'menu_class'    => 'menu'
-            ));
-            ?>
-
-            <div class="container-fluid">
-                <div class="navbar__wrap">
-                    <div class="userbar">
-                        <div class="d-flex">
-                            <div class="item selectable js-toggle">
-                                <span>EUR</span>
-                            </div>
-                            <div class="item selectable js-toggle">
-                                <span>ENG</span>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <!-- <div class="item d-flex align-items-center">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/cog.svg" alt="Cog icon">
-                            </div> -->
-                            <div class="item d-flex align-items-center">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/user.svg" alt="User icon">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        </div>
     </header>
