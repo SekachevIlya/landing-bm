@@ -1678,7 +1678,6 @@ p {
   font-family: "Quicksand", sans-serif;
   position: relative;
   z-index: 3;
-  background: #071029;
 }
 
 .first-block {
@@ -1719,8 +1718,11 @@ p {
   }
 }
 
-.log:hover,
 .reg:hover {
+  color: #ffaa17;
+}
+
+.log:hover {
   background: #1652f0;
   border-radius: 25px;
 }
@@ -2125,16 +2127,36 @@ p {
   transition: color 0.25s ease-in-out;
 }
 .footer .footer__copy {
-  display: flex;
-  justify-content: space-between;
   background-color: #262b3b;
-  height: 60px;
-  padding: 8px 445px;
+  padding: 8px 45px;
 }
 .footer .footer__copy span {
   font-size: 18px;
   line-height: 40px;
   font-weight: 500;
+}
+.footer .footer__copy .content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__copy .content .copyright {
+  padding-left: 80px;
+}
+.footer .footer__copy .content .message {
+  padding-right: 145px;
+}
+@media screen and (max-width: 1048px) {
+  .footer .footer__copy .content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .footer .footer__copy .content .message {
+    justify-content: center;
+    padding: 0;
+  }
+  .footer .footer__copy .content .copyright {
+    padding: 0;
+  }
 }
 .footer .footer__copy .message {
   display: flex;
@@ -2145,6 +2167,7 @@ p {
   height: 44px;
   border-radius: 50%;
   margin: 0 9px;
+  flex: 0 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -100,25 +100,30 @@
         </div>
     </div>
     <div class="footer__copy">
-        <span>
-            @ Bitmelech 2018-2022, All rights reserved
-        </span>
-        <div class="message">
-            <div class="message__img">
-                <a href="#">f</a>
+        <div class="container">
+            <div class="content">
+                <span class="copyright">
+                    @ Bitmelech 2018-2022, All rights reserved
+                </span>
+                <div class="message">
+                    <div class="message__img">
+                        <a href="#">f</a>
+                    </div>
+                    <div class="message__img">
+                        <a href="#">f</a>
+                    </div>
+                    <div class="message__img">
+                        <a href="#">f</a>
+                    </div>
+                    <div class="message__img">
+                        <a href="#">f</a>
+                    </div>
+                    <div class="message__img">
+                        <a href="#">f</a>
+                    </div>
+                </div>
             </div>
-            <div class="message__img">
-                <a href="#">f</a>
-            </div>
-            <div class="message__img">
-                <a href="#">f</a>
-            </div>
-            <div class="message__img">
-                <a href="#">f</a>
-            </div>
-            <div class="message__img">
-                <a href="#">f</a>
-            </div>
+
         </div>
     </div>
 </footer>
