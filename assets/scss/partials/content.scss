@@ -12,7 +12,7 @@
   }
   @include bp(768px) {
     font-size: 45px;
-    line-height: 80px;
+    line-height: 60px;
   }
 }
 
@@ -209,6 +209,93 @@
     @include bp-max($md) {
       display: block;
       margin: 0 auto;
+    }
+  }
+}
+
+.mobile-app {
+  border-radius: 72px;
+  padding: 40px 30px;
+  @include bp($md) {
+    padding: 40px;
+  }
+  @include bp($lg) {
+    padding: 60px;
+  }
+  .heading {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 25px;
+    max-width: 670px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    max-width: 620px;
+    li {
+      margin-bottom: 15px;
+      display: flex;
+      &::before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: 9px;
+        width: 9px;
+        height: 9px;
+        flex: 0 0 auto;
+        border-radius: 50%;
+        background: white;
+        margin-right: 23px;
+      }
+    }
+  }
+
+  .app-button {
+    margin: 30px 10px 16px 0;
+  }
+}
+
+
+.tools {
+  .slide {
+    padding: 50px 50px 40px;
+    border-radius: 72px;
+    @include bp($sm) {
+      padding: 60px 60px 50px;
+    }
+    @include bp($md) {
+      padding: 70px 70px 50px;
+    }
+    .title {
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      @include bp($sm) {
+        font-size: 38px;
+        line-height: 48px;
+      }
+      @include bp($md) {
+        font-size: 45px;
+        line-height: 60px;
+      }
+    }
+    .content {
+      font-size: 16px;
+      line-height: 26px;
+      max-width: 470px;
+    }
+    .link {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 26px;
+      transition: color .25s ease-in-out;
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
     }
   }
 }

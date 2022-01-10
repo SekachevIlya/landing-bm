@@ -6,42 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function initSwiper() {
-    // Swiper Slider
-    const swiperCoins = new Swiper(".coins-slider", {
-        slidesPerView: 1,
-        loop: false,
-        speed: 700,
-        spaceBetween: 40,
-        grabCursor: true,
-        watchSlidesProgress: true,
-        autoplay: {
-            delay: 3000,
-        },
-        breakpoints: {
-            375: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            700: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            992: {
-                slidesPerView: 4,
-                spaceBetween: 20,
-            },
-            1200: {
-                slidesPerView: 5,
-                spaceBetween: 20,
-            },
-            1630: {
-                slidesPerView: 6,
-                spaceBetween: 60,
-            },
-        },
-    });
 
-    const swiperTools = new Swiper(".tools-slider", {
+    const swiperTools = new Swiper(".toolss-slider", {
         slidesPerView: 1,
         loop: true,
         speed: 500,
@@ -55,10 +21,10 @@ function initSwiper() {
             el: ".swiper-pagination",
             clickable: true,
         },
-        navigation: {
-            nextEl: ".arrow_next",
-            prevEl: ".arrow_prev",
-        },
+        // navigation: {
+        //     nextEl: ".arrow_next",
+        //     prevEl: ".arrow_prev",
+        // },
     });
 }
 

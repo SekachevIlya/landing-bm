@@ -27,7 +27,7 @@
 
 <section class="get-started">
     <div class="container">
-        <h2 class="heading text-center">Get Started in 3 Easy Steps</h2>
+        <h2 class="heading text-center mb-15">Get Started in 3 Easy Steps</h2>
 
         <p class="subheading text-center m-auto text-gray">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -81,7 +81,7 @@
 
 <section class="features">
     <div class="container">
-        <h2 class="heading text-center">Bitmelech Features List</h2>
+        <h2 class="heading text-center mb-15">Bitmelech Features List</h2>
 
         <p class="subheading text-center m-auto text-gray mb-50">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -155,28 +155,96 @@
 
 <section class="tools">
     <div class="container">
-        <h2 class="heading text-center">Advanced Training Tools</h2>
+        <h2 class="heading text-center md-50">Advanced Training Tools</h2>
 
-        <div class="slider">
-            <div class="row mt-50">
-                <div class="slider-item">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="preview" src="<?php echo get_template_directory_uri(); ?>/assets/img/making-1.png" alt="">
+        <div class="tools-slider swiper slider">
+            <div class="swiper-slide slide mt-50 bg-gray">
+                <div class="row">
+                    <div class="col-md-6 hidden-md-max">
+                        <div class="d-flex justify-content-center">
+                            <img class="slide-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/devices.png" alt="">
                         </div>
-                        <div class="col-md-6">
-                            <h4 class="title">Bitmelech Features List</h4>
-                            <p class="content">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos doloribus unde, quia dolorum cupiditate aperiam sunt pariatur ipsam atque ipsa, nemo perferendis adipisci incidunt dolor dolores nisi consequuntur suscipit
-                            </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="title">Bitmelech Features List</h4>
+                        <p class="content text-gray mb-30">Our leading matching engine supports basic order types including Market, Limit, Stop Market, as well as advanced order types like Stop Limit, and Scaled with Time-in-Force instructions including Good-Till-Canceled, Fill-Or-Kill, Immediate-Or-Cancel, Day, Good-Til-Date/Time as well as Post-Only option.
+                        </p>
 
-                            <a href="#" class="btn btn-primary">
+                        <div class="mb-30">
+                            <a href="#" class="btn btn--primary mb-10">
                                 Advanced Order
                             </a>
-                            <a href="#" class="mb-10">
+                        </div>
+
+                        <div class="mb-10">
+                            <a class="link" href="#">
                                 Explore our REST & WebSocket APIs
                             </a>
-                            <a href="#" class="mb-10">
+                        </div>
+                        <div class="mb-10">
+                            <a class="link" href="#">
+                                Explore our FIX Connectivity
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide mt-50 bg-gray">
+                <div class="row">
+                    <div class="col-md-6 hidden-md-max">
+                        <div class="d-flex justify-content-center">
+                            <img class="slide-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/devices.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="title">Bitmelech Features List</h4>
+                        <p class="content text-gray mb-30">Our leading matching engine supports basic order types including Market, Limit, Stop Market, as well as advanced order types like Stop Limit, and Scaled with Time-in-Force instructions including Good-Till-Canceled, Fill-Or-Kill, Immediate-Or-Cancel, Day, Good-Til-Date/Time as well as Post-Only option.
+                        </p>
+
+                        <div class="mb-30">
+                            <a href="#" class="btn btn--primary mb-10">
+                                Advanced Order
+                            </a>
+                        </div>
+
+                        <div class="mb-10">
+                            <a class="link" href="#">
+                                Explore our REST & WebSocket APIs
+                            </a>
+                        </div>
+                        <div class="mb-10">
+                            <a class="link" href="#">
+                                Explore our FIX Connectivity
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide mt-50 bg-gray">
+                <div class="row">
+                    <div class="col-md-6 hidden-md-max">
+                        <div class="d-flex justify-content-center">
+                            <img class="slide-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/devices.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="title">Bitmelech Features List</h4>
+                        <p class="content text-gray mb-30">Our leading matching engine supports basic order types including Market, Limit, Stop Market, as well as advanced order types like Stop Limit, and Scaled with Time-in-Force instructions including Good-Till-Canceled, Fill-Or-Kill, Immediate-Or-Cancel, Day, Good-Til-Date/Time as well as Post-Only option.
+                        </p>
+
+                        <div class="mb-30">
+                            <a href="#" class="btn btn--primary mb-10">
+                                Advanced Order
+                            </a>
+                        </div>
+
+                        <div class="mb-10">
+                            <a class="link" href="#">
+                                Explore our REST & WebSocket APIs
+                            </a>
+                        </div>
+                        <div class="mb-10">
+                            <a class="link" href="#">
                                 Explore our FIX Connectivity
                             </a>
                         </div>
@@ -184,20 +252,14 @@
                 </div>
             </div>
 
-            <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </section>
 
 <section class="security">
     <div class="container">
-        <h2 class="heading text-center">High Security and Rigorous Safeguards</h2>
+        <h2 class="heading text-center mb-15">High Security and Rigorous Safeguards</h2>
 
         <p class="subheading text-center m-auto text-gray mb-50">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo tenetur dolorem adipisci fugit consequuntur delectus aperiam, et impedit minima voluptates expedita
@@ -287,13 +349,41 @@
     </div>
 </section>
 
-<section class="contact">
-    <div class="container">
-        <div class="heading">Write a Message</div>
-        <div class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa soluta cum omnis vel doloribus quaerat fugit nobis placeat
+<div class="container">
+
+    <section class="mobile-app bg-gray">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="content">
+                    <h3 class="heading">Bitmelech - Get The App For Free
+                    </h3>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    </ul>
+
+                    <div class="d-flex">
+                        <a class="app-button" href="#">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/google-download-btn.png" alt="">
+                        </a>
+                        <a class="app-button" href="#">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/appstore-download-btn.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 hidden-md-max">
+                <div class="img-wrap">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/phone.png" alt="">
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
 <?php get_footer();
