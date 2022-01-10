@@ -12,11 +12,11 @@
 
 ?>
 
-<footer class="footer bg-black">
-    <div class="container">
+<footer class="footer">
+    <div class="container br">
         <div class="row">
             <div class="col-6 col-md-2 mb-25">
-                <h4 class="footer-title text-primary">Contact Us</h4>
+                <h4 class="footer-title">Contact Us</h4>
 
                 <ul>
                     <li>
@@ -35,7 +35,7 @@
                 </ul>
             </div>
             <div class="col-6 col-md-2 mb-25">
-                <h4 class="footer-title text-primary">Product</h4>
+                <h4 class="footer-title">Product</h4>
 
                 <ul>
                     <li>
@@ -48,93 +48,76 @@
                         <a href="#">Contract (Futures)</a>
                     </li>
                     <li>
-                        <a href="#">KYC/AML</a>
+                        <a href="#">Bitmelech Debit card</a>
+                    </li>
+                    <li>
+                        <a href="#">IEO</a>
+                    </li>
+                    <li>
+                        <a href="#">Token Listing</a>
                     </li>
                 </ul>
             </div>
             <div class="col-6 col-md-2 mb-25">
-                <h4 class="footer-title text-primary">Product</h4>
+                <h4 class="footer-title">Service</h4>
 
                 <ul>
                     <li>
-                        <a href="#">Exchange</a>
+                        <a href="#">Support Center</a>
                     </li>
                     <li>
-                        <a href="#">Card</a>
+                        <a href="#">FAQ</a>
                     </li>
                     <li>
-                        <a href="#">Launchpad</a>
+                        <a href="#">Submit a Ticket</a>
+                    </li>
+                    <li>
+                        <a href="#">Fee Identity</a>
+                    </li>
+                    <li>
+                        <a href="#">Verification</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-25">
+                <h4 class="footer-title">Utility</h4>
+
+                <ul>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">FIX</a>
+                    </li>
+                    <li>
+                        <a href="#">System Moniter</a>
                     </li>
                     <li>
                         <a href="#">Wallet</a>
                     </li>
-                    <li>
-                        <a href="#">NFT</a>
-                    </li>
-                    <li>
-                        <a href="#">Markets</a>
-                    </li>
-                    <li>
-                        <a href="#">Swap</a>
-                    </li>
                 </ul>
             </div>
-            <div class="col-6 col-md-2 mb-25">
-                <h4 class="footer-title text-primary">Service</h4>
-
-                <ul>
-                    <li>
-                        <a href="#">Downloads</a>
-                    </li>
-                    <li>
-                        <a href="#">Desktop Application</a>
-                    </li>
-                    <li>
-                        <a href="#">Buy crypto</a>
-                    </li>
-                    <li>
-                        <a href="#">Referral program</a>
-                    </li>
-                    <li>
-                        <a href="#"> API</a>
-                    </li>
-                    <li>
-                        <a href="#">Widget</a>
-                    </li>
-                </ul>
+        </div>
+    </div>
+    <div class="footer__copy">
+        <span>
+            @ Bitmelech 2018-2022, All rights reserved
+        </span>
+        <div class="message">
+            <div class="message__img">
+                <a href="#">f</a>
             </div>
-            <div class="col-6 col-md-2 mb-25">
-                <h4 class="footer-title text-primary">Support</h4>
-
-                <ul>
-                    <li>
-                        <a href="#">Feedback</a>
-                    </li>
-                    <li>
-                        <a href="#">Support centre</a>
-                    </li>
-                    <li>
-                        <a href="#">Trading rules</a>
-                    </li>
-                </ul>
+            <div class="message__img">
+                <a href="#">f</a>
             </div>
-            <div class="col-6 col-md-2 mb-25">
-                <h4 class="footer-title text-primary">Community</h4>
-
-                <ul>
-                    <li>
-                        <a href="#">Social networks</a>
-                    </li>
-                    <li>
-                        <a href="#">E-mail</a>
-                    </li>
-                    <li>
-                        <a href="#">Github</a>
-                    </li>
-                    <li>
-                        <a href="#">Coinmarketcap</a>
-                    </li>
-                </ul>
+            <div class="message__img">
+                <a href="#">f</a>
+            </div>
+            <div class="message__img">
+                <a href="#">f</a>
+            </div>
+            <div class="message__img">
+                <a href="#">f</a>
             </div>
         </div>
     </div>

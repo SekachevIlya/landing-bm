@@ -27,7 +27,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#061728">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
@@ -35,18 +35,20 @@
     <?php wp_body_open(); ?>
     <header class="header">
 
-        <div class="container-fluid">
+        <div class="container first-block">
             <div class="logo__item">
 
                 <a href="<?php echo home_url(); ?>" class="logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.svg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.png" alt="" />
                 </a>
             </div>
-            <div class="reg">
-                <a href="#">Register</a>
-            </div>
-            <div class="log">
-                <a href="#">Login</a>
+            <div class="login">
+                <div class="reg">
+                    <a href="#">Register</a>
+                </div>
+                <div class="log">
+                    <a href="#">Login</a>
+                </div>
             </div>
 
         </div>
