@@ -1238,8 +1238,8 @@ p {
 }
 
 /**
- * Mobile menu
- */
+* Mobile menu
+*/
 .mobile-menu {
   position: fixed;
   width: 100vw;
@@ -1385,8 +1385,8 @@ p {
 }
 
 /**
- * Dropdown
- */
+* Dropdown
+*/
 .menu-dropdown-item {
   position: relative;
   transition: all 0.15s ease-in-out;

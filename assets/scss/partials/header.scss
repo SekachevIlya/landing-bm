@@ -35,8 +35,8 @@
 
 
 /**
- * Mobile menu
- */
+* Mobile menu
+*/
 
 .mobile-menu {
     position: fixed;
@@ -65,8 +65,8 @@
         .menu__item {
             padding: 12px 12px 0;
             /**
-       * @see .container-fluid
-       */
+     * @see .container-fluid
+     */
             @include bp(768px) {
                 padding-left: 48px;
                 padding-right: 48px;
@@ -179,8 +179,8 @@
 
 
 /**
- * Dropdown
- */
+* Dropdown
+*/
 
 .menu-dropdown-item {
     position: relative;
