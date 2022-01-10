@@ -25,9 +25,6 @@
     <meta name="msapplication-navbutton-color" content="#061728">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#061728">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
