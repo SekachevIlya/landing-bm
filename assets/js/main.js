@@ -1,22 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
     initSwiper();
     initMenu();
-    initApi();
-    initDropdown();
+    // initApi();
+    // initDropdown();
 });
 
 function initSwiper() {
 
-    const swiperTools = new Swiper(".toolss-slider", {
+    const swiperTools = new Swiper(".tools-slider", {
         slidesPerView: 1,
         loop: true,
         speed: 500,
         spaceBetween: 0,
         grabCursor: true,
         watchSlidesProgress: true,
-        autoplay: {
-            delay: 3000,
-        },
+        // autoplay: {
+        //     delay: 3000,
+        // },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

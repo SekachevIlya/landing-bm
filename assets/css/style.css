@@ -1675,25 +1675,22 @@ p {
  * Header
  */
 .header {
-  position: relative;
-  z-index: 3;
-}
-
-.first-block {
-  display: flex;
-  justify-content: space-between;
   padding: 30px 0px;
 }
-.first-block .login {
-  display: flex;
-}
-.first-block .login .reg,
-.first-block .login .log {
-  width: 150px;
-  text-align: center;
-  line-height: 50px;
-  padding: 0 40px;
+.header .reg {
+  margin-right: 40px;
   font-size: 18px;
+}
+@media screen and (max-width: 576px) {
+  .header .reg {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .btn {
+    padding: 10px 18px;
+  }
 }
 
 /**
@@ -1711,9 +1708,9 @@ p {
     width: 150px;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 360px) {
   .logo > img {
-    width: 100px;
+    width: 120px;
   }
 }
 
@@ -2003,15 +2000,18 @@ p {
 .mobile-app {
   border-radius: 72px;
   padding: 40px 30px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .mobile-app {
     padding: 40px;
+    margin-bottom: 80px;
   }
 }
 @media screen and (min-width: 1024px) {
   .mobile-app {
     padding: 60px;
+    margin-bottom: 100px;
   }
 }
 .mobile-app .heading {
@@ -2047,9 +2047,17 @@ p {
   margin: 30px 10px 16px 0;
 }
 
+.tools .slider {
+  overflow: hidden;
+  margin: 0 -30px;
+}
+.tools .swiper-slide {
+  padding: 0 30px;
+}
 .tools .slide {
   padding: 50px 50px 40px;
   border-radius: 72px;
+  margin-right: 30px;
 }
 @media screen and (min-width: 576px) {
   .tools .slide {
@@ -2093,6 +2101,21 @@ p {
 .tools .slide .link:hover {
   color: #ffaa17;
   text-decoration: none;
+}
+.tools .swiper-pagination {
+  position: static;
+  margin-top: 50px;
+  transition: all 0.25s ease-in-out;
+}
+.tools .swiper-pagination > .swiper-pagination-bullet {
+  background: #848da4 !important;
+  opacity: 1 !important;
+  height: 16px !important;
+  width: 16px !important;
+  margin: 0 4px !important;
+}
+.tools .swiper-pagination > .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #ffaa17 !important;
 }
 
 .coinschart {
@@ -2198,11 +2221,15 @@ p {
 .footer {
   padding: 32px 0 0 0;
 }
-.footer .br {
-  border-top: 4px solid #525b73;
+.footer hr {
+  border: 0;
+  border-top: 2px solid #525b73;
 }
-.footer .col-6 {
-  margin-left: 80px;
+.footer .column-inner {
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
 }
 .footer .footer-title {
   margin-top: 50px;
@@ -2220,48 +2247,54 @@ p {
   line-height: 35px;
   transition: color 0.25s ease-in-out;
 }
+.footer ul li a:hover {
+  color: #ffaa17;
+}
 .footer .footer__copy {
   background-color: #262b3b;
   padding: 8px 45px;
 }
-.footer .footer__copy span {
+.footer .footer__copy .copyright {
   font-size: 18px;
-  line-height: 40px;
+  line-height: 25px;
   font-weight: 500;
+}
+@media screen and (min-width: 1400px) {
+  .footer .footer__copy .copyright {
+    padding-left: 60px;
+  }
 }
 .footer .footer__copy .content {
   display: flex;
   justify-content: space-between;
 }
-.footer .footer__copy .content .copyright {
-  padding-left: 80px;
-}
-.footer .footer__copy .content .message {
-  padding-right: 145px;
-}
-@media screen and (max-width: 1048px) {
+@media screen and (max-width: 1024px) {
   .footer .footer__copy .content {
     flex-direction: column-reverse;
     text-align: center;
   }
-  .footer .footer__copy .content .message {
-    justify-content: center;
-    padding: 0;
-  }
-  .footer .footer__copy .content .copyright {
-    padding: 0;
-  }
 }
-.footer .footer__copy .message {
+.footer .footer__copy .social {
   display: flex;
+  justify-content: center;
 }
-.footer .footer__copy .message .message__img {
+@media screen and (min-width: 1024px) {
+  .footer .footer__copy .social {
+    padding-right: 145px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer .footer__copy .social {
+    margin-bottom: 15px;
+  }
+}
+.footer .footer__copy .social .social--img {
   background: #12172c;
-  width: 44px;
-  height: 44px;
   border-radius: 50%;
   margin: 0 9px;
   flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
 }
 
 /*# sourceMappingURL=style.css.map */

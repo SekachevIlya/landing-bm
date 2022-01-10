@@ -31,23 +31,24 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="logo__item">
 
-        <div class="container first-block">
-            <div class="logo__item">
-
-                <a href="<?php echo home_url(); ?>" class="logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.svg" alt="" />
-                </a>
-            </div>
-            <div class="login">
-                <div class="reg">
-                    <a href="#">Register</a>
+                    <a href="<?php echo home_url(); ?>" class="logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.svg" alt="" />
+                    </a>
                 </div>
-                <div>
-                    <button class="btn btn--secondary">Login</button>
-                    <!-- <a href="#">Login</a> -->
+                <div class="d-flex align-items-center">
+                    <div class="reg">
+                        <a href="#">Register</a>
+                    </div>
+                    <div>
+                        <button class="btn btn--secondary">Login</button>
+                        <!-- <a href="#">Login</a> -->
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </header>
