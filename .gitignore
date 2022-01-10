@@ -1,0 +1,6 @@
+*.tar.gz
+*.tar
+*.zip
+*.7z
+
+/bitmelech
