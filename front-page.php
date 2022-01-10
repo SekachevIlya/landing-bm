@@ -227,6 +227,74 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-slide">
+
+                    <div class=" slide mt-50 bg-gray">
+                        <div class="row">
+                            <div class="col-md-6 hidden-md-max">
+                                <div class="d-flex justify-content-center">
+                                    <img class="slide-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/devices.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="title">Bitmelech Features List</h4>
+                                <p class="content text-gray mb-30">Our leading matching engine supports basic order types including Market, Limit, Stop Market, as well as advanced order types like Stop Limit, and Scaled with Time-in-Force instructions including Good-Till-Canceled, Fill-Or-Kill, Immediate-Or-Cancel, Day, Good-Til-Date/Time as well as Post-Only option.
+                                </p>
+
+                                <div class="mb-30">
+                                    <a href="#" class="btn btn--primary mb-10">
+                                        Advanced Order
+                                    </a>
+                                </div>
+
+                                <div class="mb-10">
+                                    <a class="link" href="#">
+                                        Explore our REST & WebSocket APIs
+                                    </a>
+                                </div>
+                                <div class="mb-10">
+                                    <a class="link" href="#">
+                                        Explore our FIX Connectivity
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class=" slide mt-50 bg-gray">
+                        <div class="row">
+                            <div class="col-md-6 hidden-md-max">
+                                <div class="d-flex justify-content-center">
+                                    <img class="slide-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/devices.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="title">Bitmelech Features List</h4>
+                                <p class="content text-gray mb-30">Our leading matching engine supports basic order types including Market, Limit, Stop Market, as well as advanced order types like Stop Limit, and Scaled with Time-in-Force instructions including Good-Till-Canceled, Fill-Or-Kill, Immediate-Or-Cancel, Day, Good-Til-Date/Time as well as Post-Only option.
+                                </p>
+
+                                <div class="mb-30">
+                                    <a href="#" class="btn btn--primary mb-10">
+                                        Advanced Order
+                                    </a>
+                                </div>
+
+                                <div class="mb-10">
+                                    <a class="link" href="#">
+                                        Explore our REST & WebSocket APIs
+                                    </a>
+                                </div>
+                                <div class="mb-10">
+                                    <a class="link" href="#">
+                                        Explore our FIX Connectivity
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -303,7 +371,7 @@
 
 <section class="partners">
     <div class="container">
-        <h3 class="heading mb-50">Partners Logo</h3>
+        <h3 class="heading mb-50 text-center">Partners Logo</h3>
 
         <div class="row align-items-center">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-50">

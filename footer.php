@@ -116,21 +116,21 @@
                     @ Bitmelech 2018-2022, All rights reserved
                 </span>
                 <div class="social">
-                    <div class="social--img">
-                        <a href="#"></a>
-                    </div>
-                    <div class="social--img">
-                        <a href="#"></a>
-                    </div>
-                    <div class="social--img">
-                        <a href="#"></a>
-                    </div>
-                    <div class="social--img">
-                        <a href="#"></a>
-                    </div>
-                    <div class="social--img">
-                        <a href="#"></a>
-                    </div>
+                    <a class="social--img" href="#" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social/facebook.svg" alt="">
+                    </a>
+                    <a class="social--img" href="#" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social/telegram.svg" alt="">
+                    </a>
+                    <a class="social--img" href="#" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social/twitter.svg" alt="">
+                    </a>
+                    <a class="social--img" href="#" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social/reddit.svg" alt="">
+                    </a>
+                    <a class="social--img" href="#" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/social/coinmaster.svg" alt="">
+                    </a>
                 </div>
             </div>
 

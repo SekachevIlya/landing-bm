@@ -20,11 +20,11 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.svg">
     <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#061728">
+    <meta name="theme-color" content="#080f29">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#061728">
+    <meta name="msapplication-navbutton-color" content="#080f29">
     <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#061728">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#080f29">
     <?php wp_head(); ?>
 </head>
 
@@ -45,7 +45,6 @@
                     </div>
                     <div>
                         <button class="btn btn--secondary">Login</button>
-                        <!-- <a href="#">Login</a> -->
                     </div>
                 </div>
 

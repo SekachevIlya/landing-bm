@@ -2295,6 +2295,14 @@ p {
   flex: 0 0 auto;
   width: 44px;
   height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  transition: all 0.25s ease-in-out;
+}
+.footer .footer__copy .social .social--img:hover {
+  background-color: #283362;
 }
 
 /*# sourceMappingURL=style.css.map */
