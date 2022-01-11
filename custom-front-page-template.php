@@ -1,6 +1,13 @@
-<?php get_header(); ?>
 
-<section class="home--first-section">
+<?php
+/**
+ * Template Name: Custom Front Page
+ */
+
+get_header();
+?>
+
+<section class="home--first-section section-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -25,7 +32,7 @@
         </div>
 </section>
 
-<section class="get-started">
+<section class="get-started section-padding">
     <div class="container">
         <h2 class="heading text-center mb-15">Get Started in 3 Easy Steps</h2>
 
@@ -79,7 +86,7 @@
 </section>
 
 
-<section class="features">
+<section class="features section-padding">
     <div class="container">
         <h2 class="heading text-center mb-15">Bitmelech Features List</h2>
 
@@ -153,7 +160,7 @@
 </section>
 
 
-<section class="tools">
+<section class="tools section-padding">
     <div class="container">
         <h2 class="heading text-center md-50">Advanced Training Tools</h2>
 
@@ -304,7 +311,7 @@
     </div>
 </section>
 
-<section class="security">
+<section class="security section-padding">
     <div class="container">
         <h2 class="heading text-center mb-15">High Security and Rigorous Safeguards</h2>
 
@@ -354,7 +361,7 @@
     </div>
 </section>
 
-<section class="subscribe bg-gray">
+<section class="subscribe bg-gray section-padding">
     <div class="container">
         <h3 class="heading text-center mb-30">Subscribe our newsletter for get updates <br /> We don't make any spam</h3>
 
@@ -369,7 +376,7 @@
     </div>
 </section>
 
-<section class="partners">
+<section class="partners section-padding">
     <div class="container">
         <h3 class="heading mb-50 text-center">Partners Logo</h3>
 
@@ -398,7 +405,7 @@
 
 <div class="container">
 
-    <section class="mobile-app bg-gray">
+    <section class="mobile-app bg-gray section-padding">
         <div class="row">
             <div class="col-md-8">
                 <div class="content">
