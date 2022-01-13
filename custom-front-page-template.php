@@ -1,5 +1,5 @@
-
 <?php
+
 /**
  * Template Name: Custom Front Page
  */
@@ -30,6 +30,7 @@ get_header();
                 </div>
             </div>
         </div>
+    </div>
 </section>
 
 <section class="get-started section-padding">
@@ -84,7 +85,6 @@ get_header();
         </div>
     </div>
 </section>
-
 
 <section class="features section-padding">
     <div class="container">
@@ -159,20 +159,18 @@ get_header();
     </div>
 </section>
 
-
 <section class="tools section-padding">
     <div class="container">
-        <h2 class="heading text-center md-50">Advanced Training Tools</h2>
+        <h2 class="heading text-center mb-50">Advanced Training Tools</h2>
 
         <div class="tools-slider swiper slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-
                     <div class=" slide mt-50 bg-gray">
                         <div class="row">
                             <div class="col-md-6 hidden-md-max">
                                 <div class="d-flex justify-content-center">
-                                    <img class="slide-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/devices.png" alt="">
+                                    <img class="slide-img" src="/wp-content/themes/bitmelech/assets/img/graphics/devices.png" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -206,7 +204,7 @@ get_header();
                         <div class="row">
                             <div class="col-md-6 hidden-md-max">
                                 <div class="d-flex justify-content-center">
-                                    <img class="slide-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/devices.png" alt="">
+                                    <img class="slide-img" src="/wp-content/themes/bitmelech/assets/img/graphics/devices.png" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -240,7 +238,7 @@ get_header();
                         <div class="row">
                             <div class="col-md-6 hidden-md-max">
                                 <div class="d-flex justify-content-center">
-                                    <img class="slide-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/devices.png" alt="">
+                                    <img class="slide-img" src="/wp-content/themes/bitmelech/assets/img/graphics/devices.png" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -274,7 +272,7 @@ get_header();
                         <div class="row">
                             <div class="col-md-6 hidden-md-max">
                                 <div class="d-flex justify-content-center">
-                                    <img class="slide-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/devices.png" alt="">
+                                    <img class="slide-img" src="/wp-content/themes/bitmelech/assets/img/graphics/devices.png" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -335,8 +333,7 @@ get_header();
 
                     <div class="title">Cybersecurity</div>
 
-                    <p class="content">Our exchange infrastructure is hosted in a world-class Equinix data center that is SOC 2 Type II, ISO 27001 &
-                        PCI compliant & our cybersecurity practices are audited by a leading cybersecurity expert. </p>
+                    <p class="content">Our exchange infrastructure is hosted in a world-class Equinix data center that is SOC 2 Type II, ISO 27001 & PCI compliant & our cybersecurity practices are audited by a leading cybersecurity expert. </p>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mb-25">
@@ -422,10 +419,10 @@ get_header();
 
                     <div class="d-flex">
                         <a class="app-button" href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/google-download-btn.png" alt="">
+                            <img src="/wp-content/themes/bitmelech/assets/img/graphics/google-download-btn.png" alt="">
                         </a>
                         <a class="app-button" href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/graphics/appstore-download-btn.png" alt="">
+                            <img src="/wp-content/themes/bitmelech/assets/img/graphics/appstore-download-btn.png" alt="">
                         </a>
                     </div>
                 </div>
